@@ -17,7 +17,7 @@ alunButton.addEventListener("click", function(){
                     <h1>ALUNO</h1>
                 </span>
                 <span id="imgUserContent">
-                    <img id="imgUser" src="../SRC/ICONS/userBola.png" alt="">
+                    <img id="imgUser" src="../assets/images/userBola.png" alt="">
                 </span>
                 <span id="labelForm">
                     <p>Insira os Dados</p>
@@ -31,7 +31,7 @@ alunButton.addEventListener("click", function(){
                     <input type="password" value="" placeholder="INSIRA SUA SENHA" id="senhaInput">
                 </span>
                 <span id="entrarContent">
-                    <input type="button" id="entrarButton" value="ENTRAR">
+                    <input type="button" id="entrarButton" onclick="loginAluno()" value="ENTRAR">
                 </span>`; 
 
         formContainer.style.transform = "translate(-50%, -50%)"
@@ -49,7 +49,7 @@ profButton.addEventListener("click", function(){
                     <h1>FUNCIONÁRIO</h1>
                 </span>
                 <span id="imgUserContent">
-                    <img id="imgUser" src="../SRC/ICONS/userBola.png" alt="">
+                    <img id="imgUser" src="../assets/images/userBola.png" alt="">
                 </span>
                 <span id="labelForm">
                     <p>Insira os Dados</p>
@@ -63,7 +63,7 @@ profButton.addEventListener("click", function(){
                     <input type="password" value="" placeholder="INSIRA SUA SENHA" id="senhaInput">
                 </span>
                 <span id="entrarContent">
-                    <input type="button" id="entrarButton" value="ENTRAR">
+                    <input type="button" id="entrarButton" onclick="loginFuncionario()" value="ENTRAR">
                 </span>`; 
 
 

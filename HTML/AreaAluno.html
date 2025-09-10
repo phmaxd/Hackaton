@@ -1,13 +1,361 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Área do Aluno</title>
+    <link rel="stylesheet" href="../CSS/bootstrap_css/bootstrap.min.css">
+    <link rel="stylesheet" href="../CSS/main.css">
 </head>
 <body>
+    <!-- Navbar :) --> 
+    <nav class="navbar d-flex">
+      <div class="container-fluid">
+
+        <a class="navbar-brand" href="#">
+          <img src="/assets/images/brand.jpeg" alt="GPEI">
+        </a>
+
+        <div class="nav-item d-flex justify-content-center">
+          <h2 class="gray">Dashboard do Aluno</h2>
+        </div>
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Sidebar collapse  -->
+        <div class="collapse navbar-collapse sidebar-collapse" id="sidebarMenu">
+          <button type="button" class="btn-close ms-auto me-2 mb-3" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-label="Fechar"></button> 
+          
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+            <img id="fotoAluno" src="" alt="Foto do Aluno" style="width:150px; height:150px; object-fit:cover; border-radius:50%;" />
+              <p>Nome: <span id="nomeAluno"></span></p>
+            <button id="Deslogar" onclick="deslogar()">Deslogar</button>
+
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"><h1>HOME</h1></a>
+            </li>
+
+            <li class="nav-item mt-3">
+              <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#primeiroAno" aria-expanded="false" aria-controls="collapseWidthExample">
+                Primeiro Ano
+              </button>
+            </li>
+
+            <li class="nav-item mt-3">
+              <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#segundoAno" aria-expanded="false" aria-controls="collapseWidthExample">
+                Segundo Ano
+              </button>
+            </li>
+
+            <li class="nav-item mt-3">
+              <button class="btn btn-primary disabled" type="button" data-bs-toggle="collapse" data-bs-target="#terceiroAno" aria-expanded="false" aria-controls="collapseWidthExample">
+                Terceiro Ano
+              </button>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container mt-5">
+      <h1>Bem-vindo à Área do Aluno</h1>
+      <p>Aqui você pode acessar seus cursos, materiais e informações acadêmicas.</p>
+    </div>
+
+    <!-- Primeiro ano -->
+    <div class="collapse collapse-horizontal" id="primeiroAno">
+      <div class="container mt-5">
+      <div class="row">
+        <h1>Primeiro ano</h1>
+        <!-- Primeiro semestre button -->
+        <div class="col-2">
+          <p>
+            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#primeiroAnoPrimeiroSemestre" aria-expanded="false" aria-controls="collapseWidthExample">
+              Primeiro Semestre
+            </button>
+          </p>
+        </div>
+        
+        <!-- Segundo semestre button -->
+        <div class="col-2">
+          <p>
+            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#primeiroAnoSegundoSemestre" aria-expanded="false" aria-controls="collapseWidthExample">
+              Segundo Semestre
+            </button>
+          </p>
+        </div>
+          
+      </div>
+    </div>
+
+    <div class="container mb-5">
+      <!-- Primeiro semestre div -->
+      <div class="collapse collapse-horizontal" id="primeiroAnoPrimeiroSemestre">
+        <div class="container mt-5">
+          <div class="row">
+            <div class="col-md-4 col-sm-10 mt-3">
+              <div class="card center-center">
+                <div class="card-body">
+                  <img src="/assets/images/test.png" class="card-img-top mt-4" alt="test">
+                  <hr>
+                  <h2>Provas 1º semestre</h2>
+                </div>
+              </div>
+            </div>
+            <div class="col-1"></div>
+            <div class="col-md-4 col-sm-10 mt-3">
+              <div class="card justify-content-center">
+                <div class="card-body">
+                  <img src="/assets/images/checked.png" class="card-img-top mt-4" alt="checked">
+                  <hr>
+                  <h2>Gabaritos 1º semestre</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     
-    <h1>Bem-vindo à Área do Aluno</h1>
-    <p>Aqui você pode acessar seus cursos, materiais e informações acadêmicas.</p>
+      <!-- Segundo semestre div -->
+      <div class="collapse collapse-horizontal" id="primeiroAnoSegundoSemestre">
+        <div class="container mt-5">
+          <div class="row">
+            <div class="col-md-4 col-sm-10 mt-3">
+              <div class="card center-center">
+                <div class="card-body">
+                  <img src="/assets/images/test.png" class="card-img-top mt-4" alt="test">
+                  <hr>
+                  <h2>Provas 2º semestre</h2>
+                </div>
+              </div>
+            </div>
+            <div class="col-1"></div>
+            <div class="col-md-4 col-sm-10 mt-3">
+              <div class="card justify-content-center">
+                <div class="card-body">
+                  <img src="/assets/images/checked.png" class="card-img-top mt-4" alt="checked">
+                  <hr>
+                  <h2>Gabaritos 2º semestre</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <!-- Segundo ano -->
+    <div class="collapse collapse-horizontal" id="segundoAno">
+      <div class="container mt-5">
+      <div class="row">
+        <h1>Segundo ano</h1>
+        <!-- Primeiro semestre button -->
+        <div class="col-2">
+          <p>
+            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#segundoAnoPrimeiroSemestre" aria-expanded="false" aria-controls="collapseWidthExample">
+              Primeiro Semestre
+            </button>
+          </p>
+        </div>
+        
+        <!-- Segundo semestre button -->
+        <div class="col-2">
+          <p>
+            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#segundoAnoSegundoSemestre" aria-expanded="false" aria-controls="collapseWidthExample">
+              Segundo Semestre
+            </button>
+          </p>
+        </div>
+          
+      </div>
+    </div>
+
+    <!-- Primeiro semestre div -->
+    <div class="container mb-5">
+      <div class="collapse collapse-horizontal" id="segundoAnoPrimeiroSemestre">
+        <div class="container mt-5">
+          <div class="row">
+            <div class="col-md-4 col-sm-10 mt-3">
+              <div class="card center-center">
+                <div class="card-body">
+                  <img src="/assets/images/test.png" class="card-img-top mt-4" alt="test">
+                  <hr>
+                  <h2>Provas 1º semestre</h2>
+                </div>
+              </div>
+            </div>
+            <div class="col-1"></div>
+            <div class="col-md-4 col-sm-10 mt-3">
+              <div class="card justify-content-center">
+                <div class="card-body">
+                  <img src="/assets/images/checked.png" class="card-img-top mt-4" alt="checked">
+                  <hr>
+                  <h2>Gabaritos 1º semestre</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Segundo semestre div -->
+      <div class="collapse collapse-horizontal" id="segundoAnoSegundoSemestre">
+        <div class="container mt-5">
+          <div class="row">
+            <div class="col-md-4 col-sm-10 mt-3">
+              <div class="card center-center">
+                <div class="card-body">
+                  <img src="/assets/images/test.png" class="card-img-top mt-4" alt="test">
+                  <hr>
+                  <h2>Provas 2º semestre</h2>
+                </div>
+              </div>
+            </div>
+            <div class="col-1"></div>
+            <div class="col-md-4 col-sm-10 mt-3">
+              <div class="card justify-content-center">
+                <div class="card-body">
+                  <img src="/assets/images/checked.png" class="card-img-top mt-4" alt="checked">
+                  <hr>
+                  <h2>Gabaritos 2º semestre</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <!-- Terceiro ano -->
+    <div class="collapse collapse-horizontal" id="terceiroAno">
+      <div class="container mt-5">
+      <div class="row">
+        <h1>Segundo ano</h1>
+        <!-- Primeiro semestre button -->
+        <div class="col-2">
+          <p>
+            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#terceiroAnoPrimeiroSemestre" aria-expanded="false" aria-controls="collapseWidthExample">
+              Primeiro Semestre
+            </button>
+          </p>
+        </div>
+        
+        <!-- Segundo semestre button -->
+        <div class="col-2">
+          <p>
+            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#terceiroAnoSegundoSemestre" aria-expanded="false" aria-controls="collapseWidthExample">
+              Segundo Semestre
+            </button>
+          </p>
+        </div>
+          
+      </div>
+    </div>
+
+    <!-- Primeiro semestre div -->
+    <div class="container mb-5">
+      <div class="collapse collapse-horizontal" id="terceiroAnoPrimeiroSemestre">
+        <div class="container mt-5">
+          <div class="row">
+            <div class="col-md-4 col-sm-10 mt-3">
+              <div class="card center-center">
+                <div class="card-body">
+                  <img src="/assets/images/test.png" class="card-img-top mt-4" alt="test">
+                  <hr>
+                  <h2>Provas 1º semestre</h2>
+                </div>
+              </div>
+            </div>
+            <div class="col-1"></div>
+            <div class="col-md-4 col-sm-10 mt-3">
+              <div class="card justify-content-center">
+                <div class="card-body">
+                  <img src="/assets/images/checked.png" class="card-img-top mt-4" alt="checked">
+                  <hr>
+                  <h2>Gabaritos 1º semestre</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Segundo semestre div -->
+      <div class="collapse collapse-horizontal" id="terceiroAnoSegundoSemestre">
+        <div class="container mt-5">
+          <div class="row">
+            <div class="col-md-4 col-sm-10 mt-3">
+              <div class="card center-center">
+                <div class="card-body">
+                  <img src="/assets/images/test.png" class="card-img-top mt-4" alt="test">
+                  <hr>
+                  <h2>Provas 2º semestre</h2>
+                </div>
+              </div>
+            </div>
+            <div class="col-1"></div>
+            <div class="col-md-4 col-sm-10 mt-3">
+              <div class="card justify-content-center">
+                <div class="card-body">
+                  <img src="/assets/images/checked.png" class="card-img-top mt-4" alt="checked">
+                  <hr>
+                  <h2>Gabaritos 2º semestre</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="../SCRIPT/bootstrap_js/bootstrap.bundle.min.js"></script>
+    <script src="../SCRIPT/jquery.js"></script> 
+    <script src="../SCRIPT/Verifica.js"></script>
+
+    
+
+<script>
+function deslogar() {
+  $.ajax({
+    url: "../PHP/logout.php",
+    type: "POST",
+    dataType: "json",
+    success: function(response) {
+      if (response.status === "success") {
+        window.location.href = "../HTML/index.html"; // Redireciona após logout
+      } else {
+        alert("Erro ao deslogar!");
+      }
+    },
+    error: function(xhr, status, error) {
+      console.error("Erro na requisição:", status, error);
+      alert("Ocorreu um erro ao tentar deslogar. Tente novamente.");
+    }
+  });
+}
+</script>
 </body>
 </html> 
