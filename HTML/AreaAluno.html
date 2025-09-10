@@ -1,14 +1,9 @@
 <!DOCTYPE html>
-<<<<<<< HEAD
 <html lang="pt-br">
-=======
-<html lang="en">
->>>>>>> funcionou
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Área do Aluno</title>
-<<<<<<< HEAD
     <link rel="stylesheet" href="/css/bootstrap_css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/main.css">
 </head>
@@ -34,6 +29,11 @@
           <button type="button" class="btn-close ms-auto me-2 mb-3" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-label="Fechar"></button> 
           
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+            <img id="fotoAluno" src="" alt="Foto do Aluno" style="width:150px; height:150px; object-fit:cover; border-radius:50%;" />
+              <p>Nome: <span id="nomeAluno"></span></p>
+            <button id="Deslogar" onclick="deslogar()">Deslogar</button>
+
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#"><h1>HOME</h1></a>
             </li>
@@ -331,17 +331,11 @@
     </div>
 
     <!-- Bootstrap JS -->
-<script src="/SCRIPT/bootstrap_js/bootstrap.bundle.min.js"></script>
-=======
-        <script src="../SCRIPT/jquery.js"></script> 
+    <script src="/SCRIPT/bootstrap_js/bootstrap.bundle.min.js"></script>
+    <script src="../SCRIPT/jquery.js"></script> 
     <script src="../SCRIPT/Verifica.js"></script>
 
-</head>
-<body>
     
-    <img id="fotoAluno" src="" alt="Foto do Aluno" style="width:150px; height:150px; object-fit:cover; border-radius:50%;" />
-        <p>Nome: <span id="nomeAluno"></span></p>
-    <button id="Deslogar" onclick="deslogar()">Deslogar</button>
 
 <script>
 function deslogar() {
@@ -363,6 +357,5 @@ function deslogar() {
   });
 }
 </script>
->>>>>>> funcionou
 </body>
 </html> 

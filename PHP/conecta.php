@@ -1,18 +1,4 @@
 <?php
-<<<<<<< HEAD
-
-$servername = "localhost";
-$username = "root";
-$password = "";
-
-try {
-  $conn = new PDO("mysql:host=$servername;dbname=hackaton", $username, $password);
-  // set the PDO error mode to exception
-  $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-} catch(PDOException $e) {
- die("Connection failed: " . $e->getMessage());
-}
-=======
 $host = 'localhost';
 $db   = 'hackaton';
 $user = 'root';
@@ -33,4 +19,3 @@ try {
     echo json_encode(['status' => 'error', 'message' => 'Erro de conexão com o banco de dados.']);
     exit;
 }
->>>>>>> funcionou
