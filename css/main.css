@@ -18,6 +18,14 @@ a{
     border: none;
 }
 
+#Deslogar{
+    background-color: white;
+    border: 2px solid black;
+    color: black;
+    width: 150px;
+    border-radius: 10px;
+}
+
 .navbar{
     border-bottom: 9px solid #b50303;
     background-color: #ffffff;
