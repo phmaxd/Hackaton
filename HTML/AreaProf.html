@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<<<<<<< HEAD
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -10,3 +11,42 @@
     <p>Aqui você pode gerenciar suas turmas e alunos.</p>
 </body>
 </html>
+=======
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Área do Professor</title>
+    <script src="../SCRIPT/jquery.js"></script>
+    <script src="../SCRIPT/VerificaProf.js"></script>
+</head>
+<body>
+    <div>
+        <img id="fotoProf" src="" alt="Foto do Professor" style="width:150px; height:150px; object-fit:cover; border-radius:50%;" />
+        <p>Nome: <span id="nomeProf"></span></p>
+    </div>
+    <button id="Deslogar" onclick="deslogar()">Deslogar</button>
+
+    <script>
+        function deslogar() {
+            $.ajax({
+                url: "../PHP/logout.php",
+                type: "POST",
+                dataType: "json",
+                success: function(response) {
+                    if (response.status === "success") {
+                        window.location.href = "../HTML/index.html";
+                    } else {
+                        alert("Erro ao deslogar!");
+                    }
+                },
+                error: function(xhr, status, error) {
+                    console.error("Erro na requisição:", status, error);
+                    alert("Ocorreu um erro ao tentar deslogar. Tente novamente.");
+                }
+            });
+        }
+    </script>
+</body>
+</html>
+>>>>>>> funcionou

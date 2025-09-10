@@ -1,9 +1,14 @@
 <!DOCTYPE html>
+<<<<<<< HEAD
 <html lang="pt-br">
+=======
+<html lang="en">
+>>>>>>> funcionou
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Área do Aluno</title>
+<<<<<<< HEAD
     <link rel="stylesheet" href="/css/bootstrap_css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/main.css">
 </head>
@@ -327,5 +332,37 @@
 
     <!-- Bootstrap JS -->
 <script src="/SCRIPT/bootstrap_js/bootstrap.bundle.min.js"></script>
+=======
+        <script src="../SCRIPT/jquery.js"></script> 
+    <script src="../SCRIPT/Verifica.js"></script>
+
+</head>
+<body>
+    
+    <img id="fotoAluno" src="" alt="Foto do Aluno" style="width:150px; height:150px; object-fit:cover; border-radius:50%;" />
+        <p>Nome: <span id="nomeAluno"></span></p>
+    <button id="Deslogar" onclick="deslogar()">Deslogar</button>
+
+<script>
+function deslogar() {
+  $.ajax({
+    url: "../PHP/logout.php",
+    type: "POST",
+    dataType: "json",
+    success: function(response) {
+      if (response.status === "success") {
+        window.location.href = "../HTML/index.html"; // Redireciona após logout
+      } else {
+        alert("Erro ao deslogar!");
+      }
+    },
+    error: function(xhr, status, error) {
+      console.error("Erro na requisição:", status, error);
+      alert("Ocorreu um erro ao tentar deslogar. Tente novamente.");
+    }
+  });
+}
+</script>
+>>>>>>> funcionou
 </body>
 </html> 
