@@ -3,9 +3,9 @@
 ###
 
 <h3 align="left">Olá 👋! Este é o repositório Github do grupo 7, composto por: <br>
-    [@phmaxd](https://github.com/phmaxd "Perfil do Pedro 3MIN")<br>
-    [@Joao-Okabe](https://github.com/Joao-Okabe "Perfil do João A. 2MIN")<br>
-    [@yTakeda07](https://github.com/yTakeda07 "Perfil do Isaac ")
+    [@phmaxd](https://github.com/phmaxd)<br>
+    [@Joao-Okabe](https://github.com/Joao-Okabe)<br>
+    [@yTakeda07](https://github.com/yTakeda07)
 </h3>
 
 ###
