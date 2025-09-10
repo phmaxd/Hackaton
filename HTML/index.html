@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina Inicial</title>
+</head>
+<body>
+    <div id="container">
+    <!-- Tela inicial -->
+    <div id="tela-inicial">
+        <button id="btnAluno">SOU ALUNO</button>
+        <button id="btnFuncionario">SOU FUNCIONÁRIO</button>
+    </div>
+
+    <!-- Formulário de login do aluno -->
+    <div id="login-aluno" style="display:none;">
+        <input type="text" id="rm" placeholder="Inserir RM">
+        <input type="password" id="senha" placeholder="Senha">
+        <button onclick="loginAluno()">ENTRAR</button>
+        <button onclick="voltar()">VOLTAR</button>
+    </div>
+
+    <!-- Formulário de login do funcionário -->
+    <div id="login-funcionario" style="display:none;">
+        <input type="text" id="CPF" placeholder="Inserir CPF" maxlength="11">
+        <input type="password" id="SenhaFunc" placeholder="Senha">
+        <button onclick="loginFuncionario()">ENTRAR</button>
+        <button onclick="voltar()">VOLTAR</button>
+    </div>
+</div>
+    <br>
+<script src="../SCRIPT/index.js"></script>
+<script src="../SCRIPT/jquery.js"></script>
+</body>
+</html>
