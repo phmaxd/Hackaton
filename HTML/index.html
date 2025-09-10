@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html lang="PT-BR">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="../SRC/jquery.js"></script>
+    <link rel="shortcut icon" href="../SRC/ICONS/GPEIFavIcon.png" type="image/x-icon">
     <title>Login</title>
 </head>
 <body>
@@ -15,7 +17,7 @@
         <section id="formularioProfAlunContainer">
             <div id="formContainer">
                 <span id="formTitulo">
-                    <h1>LOGIN ALUNO</h1>
+                    <h1>ALUNO</h1>
                 </span>
                 <span id="imgUserContent">
                     <img id="imgUser" src="../SRC/ICONS/userBola.png" alt="">
@@ -34,13 +36,12 @@
                 <span id="entrarContent">
                     <input type="button" id="entrarButton" value="ENTRAR">
                 </span>
-                
             </div>
         </section>
         <section id="botoesProfAlunContainer">
             <div id="botoesContainer">
-                <input type="button" id="alunButton" value="Sou Aluno">
-                <input type="button" id="profButton" value="Sou Funcionario">
+                <input type="button" id="alunButton" value="Sou Aluno" style="color: red;">
+                <input type="button" id="profButton" value="Sou Funcionário">
             </div>
         </section>
         <div id="bolaVermelha"></div>
@@ -51,4 +52,5 @@
         </span>
     </footer>
 </body>
+    <script src="../SCRIPT/front.js"></script>
 </html>

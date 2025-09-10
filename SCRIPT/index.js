@@ -2,6 +2,7 @@ const telaInicial = document.getElementById("tela-inicial");
 const loginAlunoDiv = document.getElementById("login-aluno");
 const loginFuncDiv = document.getElementById("login-funcionario");
 
+
 document.getElementById("btnAluno").addEventListener("click", function() {
     telaInicial.style.display = "none";
     loginAlunoDiv.style.display = "block";
