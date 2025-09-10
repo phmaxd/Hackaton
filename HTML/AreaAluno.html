@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Área do Aluno</title>
-    <link rel="stylesheet" href="/css/bootstrap_css/bootstrap.min.css">
-    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="../CSS/bootstrap_css/bootstrap.min.css">
+    <link rel="stylesheet" href="../CSS/main.css">
 </head>
 <body>
     <!-- Navbar :) --> 
@@ -32,6 +32,7 @@
 
             <img id="fotoAluno" src="" alt="Foto do Aluno" style="width:150px; height:150px; object-fit:cover; border-radius:50%;" />
               <p>Nome: <span id="nomeAluno"></span></p>
+            <button id="Deslogar" onclick="deslogar()">Deslogar</button>
 
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#"><h1>HOME</h1></a>
@@ -66,9 +67,11 @@
                 <li><a class="dropdown-item" href="#">Something else here</a></li>
               </ul>
             </li>
-          </ul>
 
-          <button id="Deslogar" onclick="deslogar()">Deslogar</button>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
         </div>
       </div>
     </nav>
@@ -328,7 +331,7 @@
     </div>
 
     <!-- Bootstrap JS -->
-    <script src="/SCRIPT/bootstrap_js/bootstrap.bundle.min.js"></script>
+    <script src="../SCRIPT/bootstrap_js/bootstrap.bundle.min.js"></script>
     <script src="../SCRIPT/jquery.js"></script> 
     <script src="../SCRIPT/Verifica.js"></script>
 
