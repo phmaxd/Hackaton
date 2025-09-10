@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Tempo de geração: 10/09/2025 às 14:18
+-- Tempo de geração: 10/09/2025 às 17:29
 -- Versão do servidor: 9.1.0
 -- Versão do PHP: 8.3.14
 
@@ -32,8 +32,10 @@ USE `hackaton`;
 DROP TABLE IF EXISTS `alunos`;
 CREATE TABLE IF NOT EXISTS `alunos` (
   `id` int NOT NULL AUTO_INCREMENT,
+  `nome` varchar(100) NOT NULL,
   `rm` varchar(10) NOT NULL,
   `senha` varchar(255) NOT NULL,
+  `imagem` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
@@ -41,8 +43,8 @@ CREATE TABLE IF NOT EXISTS `alunos` (
 -- Despejando dados para a tabela `alunos`
 --
 
-INSERT INTO `alunos` (`id`, `rm`, `senha`) VALUES
-(1, '23002', '1234');
+INSERT INTO `alunos` (`id`, `nome`, `rm`, `senha`, `imagem`) VALUES
+(1, 'Isaac', '23002', '1234', '1');
 
 -- --------------------------------------------------------
 
@@ -53,8 +55,10 @@ INSERT INTO `alunos` (`id`, `rm`, `senha`) VALUES
 DROP TABLE IF EXISTS `funcionarios`;
 CREATE TABLE IF NOT EXISTS `funcionarios` (
   `Id` int NOT NULL AUTO_INCREMENT,
+  `Nome` varchar(100) NOT NULL,
   `CPF` varchar(11) NOT NULL,
   `Senha` varchar(255) NOT NULL,
+  `Imagem` varchar(255) NOT NULL,
   PRIMARY KEY (`Id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
@@ -62,8 +66,8 @@ CREATE TABLE IF NOT EXISTS `funcionarios` (
 -- Despejando dados para a tabela `funcionarios`
 --
 
-INSERT INTO `funcionarios` (`Id`, `CPF`, `Senha`) VALUES
-(1, '11111111111', '1234');
+INSERT INTO `funcionarios` (`Id`, `Nome`, `CPF`, `Senha`, `Imagem`) VALUES
+(1, 'Paulinho Banana', '11111111111', '1234', '1');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
