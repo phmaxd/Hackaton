@@ -1,36 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="PT-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pagina Inicial</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Login</title>
 </head>
 <body>
-    <div id="container">
-    <!-- Tela inicial -->
-    <div id="tela-inicial">
-        <button id="btnAluno">SOU ALUNO</button>
-        <button id="btnFuncionario">SOU FUNCIONÁRIO</button>
-    </div>
+    <header>
 
-    <!-- Formulário de login do aluno -->
-    <div id="login-aluno" style="display:none;">
-        <input type="text" id="rm" placeholder="Inserir RM">
-        <input type="password" id="senha" placeholder="Senha">
-        <button onclick="loginAluno()">ENTRAR</button>
-        <button onclick="voltar()">VOLTAR</button>
-    </div>
-
-    <!-- Formulário de login do funcionário -->
-    <div id="login-funcionario" style="display:none;">
-        <input type="text" id="CPF" placeholder="Inserir CPF">
-        <input type="password" id="SenhaFunc" placeholder="Senha">
-        <button onclick="loginFuncionario()">ENTRAR</button>
-        <button onclick="voltar()">VOLTAR</button>
-    </div>
-</div>
-    <br>
-<script src="../SCRIPT/index.js"></script>
-<script src="../SCRIPT/jquery.js"></script>
+    </header>
+    <main>
+        <section id="formularioProfAlunContainer">
+            <div id="formContainer">
+                <span id="formTitulo">
+                    <h1>LOGIN ALUNO</h1>
+                </span>
+                <span id="imgUserContent">
+                    <img id="imgUser" src="../SRC/ICONS/userBola.png" alt="">
+                </span>
+                <span id="labelForm">
+                    <p>Insira os Dados</p>
+                </span>
+                <span id="rmContent">
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text" value="" placeholder="INSIRA SEU RM" id="rmInput">
+                </span>
+                <span id="senhaContent">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" value="" placeholder="INSIRA SUA SENHA" id="senhaInput">
+                </span>
+                <span id="entrarContent">
+                    <input type="button" id="entrarButton" value="ENTRAR">
+                </span>
+                
+            </div>
+        </section>
+        <section id="botoesProfAlunContainer">
+            <div id="botoesContainer">
+                <input type="button" id="alunButton" value="Sou Aluno">
+                <input type="button" id="profButton" value="Sou Funcionario">
+            </div>
+        </section>
+        <div id="bolaVermelha"></div>
+    </main>
+    <footer>
+        <span id="imgBottonContainer">
+            <img src="../SRC/IMG/GPEI.png" id="imgBotton">
+        </span>
+    </footer>
 </body>
 </html>
