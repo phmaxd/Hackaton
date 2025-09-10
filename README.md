@@ -10,12 +10,6 @@
 
 ###
 
-Este projeto tem como objetivo auxiliar os professores e corpo docente da Etec de Itanhaém na correção do Provão, e no acesso dos alunos aos resultados.
-
-###
-
-<h3> Foram usadas as seguintes tecnologias: </h3>
-
 <div align="left">
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="30" alt="javascript logo"  />
   <img width="12" />
