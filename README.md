@@ -10,6 +10,10 @@
 
 ###
 
+Este projeto tem como objetivo auxiliar os professores e corpo docente da Etec de Itanhaém na correção do Provão, e no acesso dos alunos aos seus resultados, qual foi sua pontuação final até quais questões eles erraram, quais acertaram.
+
+###
+
 <h3> Foram usadas as seguintes tecnologias: </h3>
 
 <div align="left">
