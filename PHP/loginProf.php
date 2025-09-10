@@ -16,25 +16,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         exit;
     }
 
-    try {
-        $query = "SELECT * FROM funcionarios WHERE CPF = ? AND senha = ?";
-        $stmt = $pdo->prepare($query);
-        $stmt->execute([$CPF, $senha]);
-        $professor = $stmt->fetch(PDO::FETCH_ASSOC);
-        if ($professor) {
-            $_SESSION['CPF'] = $CPF;
-            echo json_encode([
-                'status' => 'success',
-                'loggedIn' => true,
-                'CPF' => $CPF,
-                'Nome' => $professor['Nome'],
-                'Foto' => $professor['Imagem']
-            ]);
-        } else {
-            echo json_encode(['status' => 'error', 'message' => 'Credenciais inválidas.']);
-        }
-    } catch (Exception $e) {
-        echo json_encode(['status' => 'error', 'message' => 'Erro no servidor.']);
+    $query = "SELECT * FROM funcionarios WHERE CPF = ?";
+    $stmt = $pdo->prepare($query);
+    $stmt->execute([$CPF]);
+    $professor = $stmt->fetch(PDO::FETCH_ASSOC);
+
+    if ($stmt->rowCount() > 0) {
+        $_SESSION['CPF'] = $CPF;
+        echo json_encode(['status' => 'success', 'CPF' => $CPF]);
+    } else {
+        echo json_encode(['status' => 'error', 'message' => 'Credenciais inválidas.']);
     }
 } else {
     echo json_encode(['status' => 'error', 'message' => 'Método inválido.']);
