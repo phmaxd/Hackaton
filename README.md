@@ -3,9 +3,9 @@
 ###
 
 <h3 align="left">Olá 👋! Este é o repositório Github do grupo 7, composto por: <br>
-    [@phmaxd](https://github.com/phmaxd "Perfil do Pedro 3MIN")<br>
-    [@Joao-Okabe](https://github.com/Joao-Okabe "Perfil do João A. 2MIN")<br>
-    [@yTakeda07](https://github.com/yTakeda07 "Perfil do Isaac ")
+- [![Pedro](https://img.shields.io/badge/Pedro-000?style=for-the-badge&logo=github&logoColor=fff)](https://github.com/phmaxd)  
+- [![João](https://img.shields.io/badge/João-000?style=for-the-badge&logo=github&logoColor=fff)](https://github.com/Joao-Okabe)  
+- [![Isaac](https://img.shields.io/badge/Isaac-000?style=for-the-badge&logo=github&logoColor=fff)](https://github.com/yTakeda07)  
 </h3>
 
 ###
