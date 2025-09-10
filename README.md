@@ -3,13 +3,12 @@
 ###
 
 <h3 align="left">Olá 👋! Este é o repositório Github do grupo 7, composto por: <br>
-    @phmaxd
-    @Joao-Okabe
+    [![GitHub](https://img.shields.io/badge/GitHub-000?logo=github&logoColor=fff)[@phmaxd](https://github.com/phmaxd "Perfil do Pedro 3MIN")]<br>
+    [@Joao-Okabe](https://github.com/Joao-Okabe "Perfil do João A. 2MIN")<br>
+    [@yTakeda07](https://github.com/yTakeda07 "Perfil do Isaac 3MIN")
 </h3>
 
 ###
-
-
 
 <div align="left">
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="30" alt="javascript logo"  />
