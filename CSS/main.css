@@ -7,15 +7,16 @@ a{
 }
 
 .btn-primary{
-    background-color: #b50303;
+    background-color: white;
     border: none;
     width: 100%;
     height: 50px;
+    color: #b50303;
 }
 
 .btn-primary:hover{
     background-color: #b50303;
-    border: none;
+    border: white 2px solid;
 }
 
 .navbar{
@@ -25,19 +26,30 @@ a{
 }
 
 .navbar-brand img{
-    width: 200px;
-    height: auto;
+  height: 100px;
 }
 
 .navbar, text, .navbar-brand{
     color: #b50303;
 }
 
-.fotoAluno{
-  width:150px; 
-  height:150px; 
-  object-fit:cover; 
-  border-radius:50%;
+.divFotoAluno {
+  height: 150px;
+  width: 150px;
+  border: white 5px solid;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Evita que a imagem transborde para fora do círculo */
+  margin: 0 auto
+}
+
+.fotoAluno {
+  object-fit: cover; 
+  width: 100%;
+  height: 100%;
+  border-radius: 50%; /* Garante que a imagem tenha borda arredondada */
 }
 
 h2{
@@ -64,14 +76,15 @@ h2{
 }
 
 .sidebar-collapse {
+  align-items: center; 
   position: fixed;
   top: 0;
   right: 0;
   height: 100vh;
-  width: 330px;
+  width: 280px;
   padding: 10px;
-  background: #fff;
-  outline: 9px solid #b50303;
+  background: #b50303;
+  color: white;
   padding-top: 60px;
   box-shadow: 2px 0 8px rgba(0,0,0,0.1);
   transform: translateX(100%);
