@@ -11,16 +11,21 @@ p{
   padding: 0;
 }
 
-header{
-  
+.headerSideBar{
+  height: 20%;
+  width: 100%;
+  border-bottom: 9px solid white;
 }
 
 .btn-primary{
   background-color: white;
   border: none;
-  width: 100%;
+  width: 90%;
   height: 50px;
   color: #b50303;
+  margin-left: 5%;
+  margin-right: 5%;
+  border: #b50303 2px solid;
 }
 
 .gray{
@@ -42,7 +47,7 @@ header{
 }
 
 .navbar-brand img{
-  height: 100px;
+  height: 73px;
 }
 
 .navbar, text, .navbar-brand{
@@ -103,10 +108,8 @@ h2{
   z-index: 1050;
 }
 
-.white-bar{
-  background-color: white;
-  height: 9px;
-  width: 100%;
+.nameSideBar{
+  margin-left: 5%;
 }
 
 .sidebar-collapse.show {
