@@ -23,8 +23,11 @@
   }
   header h1 {
     font-weight: 700;
-    font-size: 24px;
+    font-size: 35px;
     color: #5a5a5a;
+    text-align: left;
+    position: relative;
+    left: 55%;
   }
 
   .form-section {
@@ -157,16 +160,16 @@
 }
 
 a{
-  color: #666666;
-  border-bottom: 1px;
+    color: #666666;
+    border-bottom: 1px;
 }
 
 a:active{
-  color: #C1272D;
+    color: #C1272D;
 }
 
 a:hover{
-  color: #C1272D;
+    color: #C1272D;
 }
 
 .BordaRedonda :hover{
