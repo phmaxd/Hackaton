@@ -1,127 +1,120 @@
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  height: 100%;
-}
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    height: 100%;
+  }
+  .container {
+    display: flex;
+    height: 100%;
+  }
+  .main {
+    flex: 1;
+    padding: 20px 40px;
+  }
+  header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+  header img {
+    width: 120px;
+    height: auto;
+  }
+  header h1 {
+    font-weight: 700;
+    font-size: 24px;
+    color: #5a5a5a;
+  }
 
-.container {
-  display: flex;
-  height: 100%;
-}
+  .form-section {
+    padding-top: 10px;
+  }
 
-.main {
-  flex: 1;
-  padding: 20px 40px;
-}
+  .form-label {
+    background-color: #b82c2c;
+    color: white;
+    padding: 6px 12px;
+    font-weight: bold;
+    border-radius: 4px 4px 0 0;
+    width: fit-content;
+    
+  }
 
-header {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  margin-bottom: 20px;
-}
+  textarea {
+    width: 80%;
+    height: 100px;
+    padding: 10px;
+    resize: none;
+    border: 1px solid #ccc;
+    border-radius: 0 0 4px 4px;
+    font-size: 18px;
+  }
 
-header img {
-  width: 120px;
-  height: auto;
-}
+  .answer {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    gap: 10px;
+    width: 700px;
+  }
+  .answer label {
+    font-weight: 700;
+    color: #808080;
+    min-width: 20px;
+  }
+  .answer input[type="text"] {
+    flex: 1;
+    padding: 6px 12px;
+    border-radius: 16px;
+    border: 1px solid #a0a0a0;
+    font-size: 14px;
+  }
+  .answer input[type="radio"] {
+    accent-color: #b82c2c;
+  }
 
-header h1 {
-  font-weight: 700;
-  font-size: 24px;
-  color: #5a5a5a;
-}
+  .sidebar {
+    width: 220px;
+    height: 100%;
+    position: fixed;
+    right: 0;
+    background-color: #b82c2c;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 10px;
+    box-sizing: border-box;
+  }
 
-.form-section {
-  padding-top: 10px;
-}
+  .sidebar .profile {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .profile-icon {
+    width: 90px;
+    height: 90px;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin-right: 55px;
+    position: relative;
+    top: -10%;
+  }
 
-.form-label {
-  background-color: #b82c2c;
-  color: white;
-  padding: 6px 12px;
-  font-weight: bold;
-  border-radius: 4px 4px 0 0;
-  width: fit-content;  
-}
+  .barra{
+    width: 100%;
+    position: relative;
+    background-color: #C1272D;
+    height: 2px;
+    border: none;
+  }
 
-textarea {
-  width: 80%;
-  height: 100px;
-  padding: 10px;
-  resize: none;
-  border: 1px solid #ccc;
-  border-radius: 0 0 4px 4px;
-  font-size: 18px;
-}
-
-.answer {
-  display: flex;
-  align-items: center;
-  margin: 10px 0;
-  gap: 10px;
-  width: 700px;
-}
-
-.answer label {
-  font-weight: 700;
-  color: #808080;
-  min-width: 20px;
-}
-
-.answer input[type="text"] {
-  flex: 1;
-  padding: 6px 12px;
-  border-radius: 16px;
-  border: 1px solid #a0a0a0;
-  font-size: 14px;
-}
-
-.answer input[type="radio"] {
-  accent-color: #b82c2c;
-}
-
-.sidebar {
-  width: 220px;
-  height: 100%;
-  position: fixed;
-  right: 0;
-  background-color: #b82c2c;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  padding: 20px 10px;
-  box-sizing: border-box;
-}
-
-.sidebar .profile {
-  margin-bottom: 20px;
-  display: flex;
-  justify-content: flex-end;
-}
-  
-.profile-icon {
-  width: 90px;
-  height: 90px;
-  background-color: #ccc;
-  border-radius: 50%;
-  margin-right: 50px;
-}
-
-.barra{
-  width: 100%;
-  position: relative;
-  background-color: #C1272D;
-  height: 2px;
-  border: none;
-}
-
-.BARRA{
-  position: relative;
-  width: 89%;
-  right: 2%;
-}
-
+  .BARRA{
+    position: relative;
+    width: 89%;
+    right: 2%;
+  }
 .menu {
   width: 200px;
   border-radius: 8px;
@@ -177,14 +170,40 @@ a:hover{
 }
 
 .BordaRedonda :hover{
-  border-radius: 6px;
+    border-radius: 6px;
 }
 
 .espaco{
-  border: 0px;
+    border: 0px;
 }
 
 select{
-  font-size: medium;
-  padding: 5px ;
+    font-size: medium;
+    padding: 5px ;
+}
+
+p{
+    text-align: center;
+    position: relative;
+    top: -4.5%;
+}
+
+.menu2{
+    position: relative;
+    top: -5%;
+}
+
+.botao{
+    position: relative;
+;    color: #C1272D;
+    background-color: white;
+}
+
+.butao{
+    position: relative;
+    left: 76.5%;
+    color: #C1272D;
+    background-color: white;
+    border-radius: 6px;
+    border-color: #666666;
 }

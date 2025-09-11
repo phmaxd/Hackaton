@@ -1,0 +1,103 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    display: flex;
+}
+main{
+    width: 85%;
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+Drawer{
+    width: 15%;
+    height: 100vh ;
+    background-color: #B00D0D;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+mainHeader{
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    border-bottom: #B00D0D solid 0.5vh;
+    height: 20%;
+    align-items: center;
+    position: relative;
+}
+#logoGPEI{
+    width: 35%;
+}
+#fotoProf{
+    width: 15vh; 
+    height: 15vh; 
+    object-fit:cover; 
+    border-radius:50%;
+    outline: 1vh solid #ffffff;
+    outline-offset: -1vh;
+}
+drawerHeader{
+    
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 0;
+    border-bottom: 0.5vh white solid;
+}
+#drawerHeaderContent{
+    margin-top: 4%
+
+}
+#nomeProf{
+    font-size: 2vh;
+    color: white;
+    font-weight: 800;
+}
+#titlePage{
+    position: absolute;
+    right:  5%;
+    color: #636363;
+    font-size: 130%;
+}
+/* Estilo geral do select */
+select {
+  width: 150px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+/* Opção em vermelho */
+option.red {
+  color: #B00D0D;
+  font-weight: bold;
+}
+
+/* Opcional: destaque na opção selecionada */
+select option:checked {
+  background: #eee;
+  color: #B00D0D;
+  font-weight: bold;
+}
+#serieLabel, #salasLabel{
+    color: white;
+}
+drawerMain{
+    margin-top: 5%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5%;
+}
+option{
+    text-align: center;
+}

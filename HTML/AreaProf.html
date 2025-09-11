@@ -1,18 +1,73 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Área do Professor</title>
     <script src="../SCRIPT/jquery.js"></script>
+    <link rel="stylesheet" href="../CSS/AreaProf.css">
+    <link rel="shortcut icon" href="../assets/images/GPEIFavIcon.png" type="image/x-icon">  
     <script src="../SCRIPT/VerificaProf.js"></script>
 </head>
 <body>
-    <div>
-        <img id="fotoProf" src="" alt="Foto do Professor" style="width:150px; height:150px; object-fit:cover; border-radius:50%;" />
-        <p>Nome: <span id="nomeProf"></span></p>
-    </div>
-    <button id="Deslogar" onclick="deslogar()">Deslogar</button>
+    <main>
+
+    <mainHeader>
+        <span>
+            <img src="../assets/images/GPEI.png" id="logoGPEI">
+        </span>
+        <span id="titlePage">
+            <h1>
+                Dashboard do Professor
+            </h1>
+        </span>
+    </mainHeader>
+    <mainMain>
+
+    </mainMain>
+    </main>
+    <drawer>
+        <drawerHeader>
+            <sectio id="drawerHeaderContent">
+                <span> 
+                    <img id="fotoProf" src="../assets/images/userBola.png" alt="Foto do Professor"/>
+                </span>
+                <span>
+                    <p id="nomeProf"></p>
+                </span>
+            </section>
+
+        </drawerHeader>
+        <drawerMain>
+            <span id="selectSalasContainer">
+                <select name="" id="salasSelect">
+                    <option disabled selected hidden>SALAS</option>
+                    <option value="M-TEC MIN">M-TEC MIN</option>
+                    <option value="M-TEC MAD">M-TEC MAD</option>
+                    <option value="M-TEC MAM">M-TEC MAM</option>
+                    <option value="M-TEC DS">M-TEC DS</option>
+                    <option value="M-TEC MADN">M-TEC MADN</option>
+                </select>
+            </span>
+                <select name="" id="seriesSelect">
+                    <option disabled selected hidden>SERIES</option>
+                    <option value="M-TEC MIN">M-TEC MIN</option>
+                    <option value="M-TEC MAD">M-TEC MAD</option>
+                    <option value="M-TEC MAM">M-TEC MAM</option>
+                    <option value="M-TEC DS">M-TEC DS</option>
+                    <option value="M-TEC MADN">M-TEC MADN</option>
+                </select>
+            </span>
+            <button id="Deslogar" onclick="deslogar()">Deslogar</button>
+        </drawerMain>
+
+
+
+    </drawer>
+
+    <footer>
+
+    </footer>
 
     <script>
         function deslogar() {
