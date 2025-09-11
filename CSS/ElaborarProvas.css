@@ -1,4 +1,4 @@
-  body {
+   body {
     margin: 0;
     font-family: Arial, sans-serif;
   }
@@ -97,7 +97,7 @@
   }
 
   .barra{
-    width: 122%;
+    width: 123%;
     position: relative;
     right: 2%;
   }
@@ -112,8 +112,8 @@
   content: "";
   position: absolute;
   top: 0;
-  left: 86.1%;
-  width: 15%;
+  left: 85.5%;
+  width: 16%;
   height: 100%;
   background-color: white;
 }
@@ -149,17 +149,25 @@
   font-size: 14px;
   padding: 6px 0;
   border-bottom: 1px solid #ccc;
-  cursor: pointer;
 }
 
-.opcao selected{
-  color: #C1272D;
-  font-weight: bold
-}
 .opcao:last-child {
   border-bottom: none;
 }
 
 .opcao:hover {
   background-color: #f0f0f0;
+}
+
+a{
+    color: #666666;
+    border-bottom: 1px;
+}
+
+a:active{
+    color: #C1272D;
+}
+
+a:hover{
+    color: #C1272D;
 }
