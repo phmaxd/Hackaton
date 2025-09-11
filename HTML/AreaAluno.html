@@ -30,13 +30,10 @@
           
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
 
-            <img id="fotoAluno" src="" alt="Foto do Aluno" style="width:150px; height:150px; object-fit:cover; border-radius:50%;" />
-              <p>Nome: <span id="nomeAluno"></span></p>
-            <button id="Deslogar" onclick="deslogar()">Deslogar</button>
-
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#"><h1>HOME</h1></a>
-            </li>
+            <div class="container d-flex justify-content-center align-items-center">
+              <img id="fotoAluno" class="fotoAluno" src="" alt="Foto do Aluno"/>
+            </div>
+            <p>Nome: <span id="nomeAluno"></span></p>
 
             <li class="nav-item mt-3">
               <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#primeiroAno" aria-expanded="false" aria-controls="collapseWidthExample">
@@ -51,27 +48,14 @@
             </li>
 
             <li class="nav-item mt-3">
-              <button class="btn btn-primary disabled" type="button" data-bs-toggle="collapse" data-bs-target="#terceiroAno" aria-expanded="false" aria-controls="collapseWidthExample">
+              <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#terceiroAno" aria-expanded="false" aria-controls="collapseWidthExample">
                 Terceiro Ano
               </button>
             </li>
-
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Dropdown
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-            </li>
           </ul>
+
+          <button id="Deslogar" class="btn btn-danger mt-3 ms-auto" onclick="deslogar()">Deslogar</button>
+
         </div>
       </div>
     </nav>

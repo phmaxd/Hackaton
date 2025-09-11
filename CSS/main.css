@@ -33,6 +33,13 @@ a{
     color: #b50303;
 }
 
+.fotoAluno{
+  width:150px; 
+  height:150px; 
+  object-fit:cover; 
+  border-radius:50%;
+}
+
 h2{
     color: rgb(0, 0, 0);
 }

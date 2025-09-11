@@ -1,121 +1,125 @@
-   body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-  }
-  .container {
-    display: flex;
-    height: 100vh;
-  }
-  .main {
-    flex: 1;
-    padding: 20px 40px;
-  }
-  header {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    margin-bottom: 20px;
-  }
-  header img {
-    width: 120px;
-    height: auto;
-  }
-  header h1 {
-    font-weight: 700;
-    font-size: 24px;
-    color: #5a5a5a;
-  }
-
-  .form-section {
-    padding-top: 10px;
-  }
-
-  .form-label {
-    background-color: #b82c2c;
-    color: white;
-    padding: 6px 12px;
-    font-weight: bold;
-    border-radius: 4px 4px 0 0;
-    width: fit-content;
-    
-  }
-
-  textarea {
-    width: 100%;
-    height: 100px;
-    padding: 10px;
-    resize: none;
-    border: 1px solid #ccc;
-    border-radius: 0 0 4px 4px;
-    font-size: 18px;
-  }
-
-  .answer {
-    display: flex;
-    align-items: center;
-    margin: 10px 0;
-    gap: 10px;
-    width: 700px;
-  }
-  .answer label {
-    font-weight: 700;
-    color: #808080;
-    min-width: 20px;
-  }
-  .answer input[type="text"] {
-    flex: 1;
-    padding: 6px 12px;
-    border-radius: 16px;
-    border: 1px solid #a0a0a0;
-    font-size: 14px;
-  }
-  .answer input[type="radio"] {
-    accent-color: #b82c2c;
-  }
-
-  .sidebar {
-    width: 220px;
-    background-color: #b82c2c;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    padding: 20px 10px;
-    box-sizing: border-box;
-  }
-
-  .sidebar .profile {
-    margin-bottom: 20px;
-    display: flex;
-    justify-content: flex-end;
-  }
-  .profile-icon {
-    width: 90px;
-    height: 90px;
-    background-color: #ccc;
-    border-radius: 50%;
-    margin-right: 50px;
-  }
-
-  .barra{
-    width: 123%;
-    position: relative;
-    right: 2%;
-  }
-  .duas-camadas {
-  position: relative;
-  border: none;
-  height: 2px;
-  background-color: red;
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  height: 100%;
 }
 
-.duas-camadas::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 85.5%;
-  width: 16%;
+.container {
+  display: flex;
   height: 100%;
-  background-color: white;
+}
+
+.main {
+  flex: 1;
+  padding: 20px 40px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+header img {
+  width: 120px;
+  height: auto;
+}
+
+header h1 {
+  font-weight: 700;
+  font-size: 24px;
+  color: #5a5a5a;
+}
+
+.form-section {
+  padding-top: 10px;
+}
+
+.form-label {
+  background-color: #b82c2c;
+  color: white;
+  padding: 6px 12px;
+  font-weight: bold;
+  border-radius: 4px 4px 0 0;
+  width: fit-content;  
+}
+
+textarea {
+  width: 80%;
+  height: 100px;
+  padding: 10px;
+  resize: none;
+  border: 1px solid #ccc;
+  border-radius: 0 0 4px 4px;
+  font-size: 18px;
+}
+
+.answer {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  gap: 10px;
+  width: 700px;
+}
+
+.answer label {
+  font-weight: 700;
+  color: #808080;
+  min-width: 20px;
+}
+
+.answer input[type="text"] {
+  flex: 1;
+  padding: 6px 12px;
+  border-radius: 16px;
+  border: 1px solid #a0a0a0;
+  font-size: 14px;
+}
+
+.answer input[type="radio"] {
+  accent-color: #b82c2c;
+}
+
+.sidebar {
+  width: 220px;
+  height: 100%;
+  position: fixed;
+  right: 0;
+  background-color: #b82c2c;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 10px;
+  box-sizing: border-box;
+}
+
+.sidebar .profile {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+  
+.profile-icon {
+  width: 90px;
+  height: 90px;
+  background-color: #ccc;
+  border-radius: 50%;
+  margin-right: 50px;
+}
+
+.barra{
+  width: 100%;
+  position: relative;
+  background-color: #C1272D;
+  height: 2px;
+  border: none;
+}
+
+.BARRA{
+  position: relative;
+  width: 89%;
+  right: 2%;
 }
 
 .menu {
@@ -130,11 +134,11 @@
 
 .SALAS {
   background: #E7F0FD;
-  color: #0074CC;
+  color: #C1272D;
   font-weight: bold;
   font-size: 16px;
   padding: 8px 0;
-  border-bottom: 1px solid #0074CC;
+  border-bottom: 1px solid #C1272D;
   border-radius: 6px 6px 0 0;
 }
 
@@ -160,14 +164,27 @@
 }
 
 a{
-    color: #666666;
-    border-bottom: 1px;
+  color: #666666;
+  border-bottom: 1px;
 }
 
 a:active{
-    color: #C1272D;
+  color: #C1272D;
 }
 
 a:hover{
-    color: #C1272D;
+  color: #C1272D;
+}
+
+.BordaRedonda :hover{
+  border-radius: 6px;
+}
+
+.espaco{
+  border: 0px;
+}
+
+select{
+  font-size: medium;
+  padding: 5px ;
 }
