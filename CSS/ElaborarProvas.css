@@ -1,10 +1,11 @@
-   body {
+  body {
     margin: 0;
     font-family: Arial, sans-serif;
+    height: 100%;
   }
   .container {
     display: flex;
-    height: 100vh;
+    height: 100%;
   }
   .main {
     flex: 1;
@@ -41,7 +42,7 @@
   }
 
   textarea {
-    width: 100%;
+    width: 80%;
     height: 100px;
     padding: 10px;
     resize: none;
@@ -75,6 +76,9 @@
 
   .sidebar {
     width: 220px;
+    height: 100%;
+    position: fixed;
+    right: 0;
     background-color: #b82c2c;
     color: white;
     display: flex;
@@ -93,31 +97,24 @@
     height: 90px;
     background-color: #ccc;
     border-radius: 50%;
-    margin-right: 50px;
+    margin-right: 55px;
+    position: relative;
+    top: -10%;
   }
 
   .barra{
-    width: 123%;
+    width: 100%;
     position: relative;
+    background-color: #C1272D;
+    height: 2px;
+    border: none;
+  }
+
+  .BARRA{
+    position: relative;
+    width: 89%;
     right: 2%;
   }
-  .duas-camadas {
-  position: relative;
-  border: none;
-  height: 2px;
-  background-color: red;
-}
-
-.duas-camadas::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 85.5%;
-  width: 16%;
-  height: 100%;
-  background-color: white;
-}
-
 .menu {
   width: 200px;
   border-radius: 8px;
@@ -130,11 +127,11 @@
 
 .SALAS {
   background: #E7F0FD;
-  color: #0074CC;
+  color: #C1272D;
   font-weight: bold;
   font-size: 16px;
   padding: 8px 0;
-  border-bottom: 1px solid #0074CC;
+  border-bottom: 1px solid #C1272D;
   border-radius: 6px 6px 0 0;
 }
 
@@ -170,4 +167,43 @@ a:active{
 
 a:hover{
     color: #C1272D;
+}
+
+.BordaRedonda :hover{
+    border-radius: 6px;
+}
+
+.espaco{
+    border: 0px;
+}
+
+select{
+    font-size: medium;
+    padding: 5px ;
+}
+
+p{
+    text-align: center;
+    position: relative;
+    top: -4.5%;
+}
+
+.menu2{
+    position: relative;
+    top: -5%;
+}
+
+.botao{
+    position: relative;
+;    color: #C1272D;
+    background-color: white;
+}
+
+.butao{
+    position: relative;
+    left: 76.5%;
+    color: #C1272D;
+    background-color: white;
+    border-radius: 6px;
+    border-color: #666666;
 }
