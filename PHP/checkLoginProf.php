@@ -6,19 +6,32 @@ error_reporting(E_ALL);
 session_start();
 header('Content-Type: application/json');
 
-include 'conecta.php';
+require_once 'conecta.php';
 
-if (!empty($_SESSION['CPF'])) {
-    $query = "SELECT Nome, Imagem FROM funcionarios WHERE CPF = ?";
-    $stmt = $pdo->prepare($query);
-    $stmt->execute([$_SESSION['CPF']]);
-    $professor = $stmt->fetch(PDO::FETCH_ASSOC);
+$response = ['loggedIn' => false];
 
-    echo json_encode([
-        'loggedIn' => true,
-        'nome' => $professor ? $professor['Nome'] : '',
-        'foto' => $professor ? $professor['Imagem'] : ''
-    ]);
-} else {
-    echo json_encode(['loggedIn' => false]);
+try {
+    if (!empty($_SESSION['CPF'])) {
+        $query = "SELECT Nome, Imagem FROM funcionarios WHERE CPF = ?";
+        $stmt = $pdo->prepare($query);
+        $stmt->execute([$_SESSION['CPF']]);
+        $professor = $stmt->fetch(PDO::FETCH_ASSOC);
+
+        if ($professor) {
+            $Imagem = '';
+            if ($professor['Imagem']) {
+                $Imagem = 'data:image/jpeg;base64,' . base64_encode($professor['Imagem']);
+            }
+            $response = [
+                'loggedIn' => true,
+                'nome' => $professor['Nome'],
+                'foto' => $Imagem
+            ];
+        }
+    }
+} catch (Exception $e) {
+    $response['error'] = $e->getMessage();
 }
+
+echo json_encode($response);
+exit;

@@ -7,10 +7,10 @@ window.onload = function() {
             if (response.loggedIn === true) {
                 document.getElementById('nomeAluno').textContent = response.nome || 'Sem nome';
                 if (response.foto) {
-                    document.getElementById('fotoAluno').src = '../' + response.foto;
-                } else {
-                    document.getElementById('fotoAluno').src = '../imagens/sem-foto.png';
-                }
+    document.getElementById('fotoAluno').src = response.foto; // já é base64 com data URI
+} else {
+    document.getElementById('fotoAluno').src = '../imagens/sem-foto.png'; // fallback
+}
             } else {
                 window.location.href = '../HTML/index.html';
             }
