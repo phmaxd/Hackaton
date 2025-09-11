@@ -10,58 +10,45 @@
 <body>
     <!-- Navbar :) --> 
     <nav class="navbar d-flex">
-      <div class="container-fluid">
-
         <a class="navbar-brand" href="#">
           <img src="../assets/images/brand.jpeg" alt="GPEI">
         </a>
-
         <div class="nav-item d-flex justify-content-center">
           <h2 class="gray">Dashboard do Aluno</h2>
         </div>
-        
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <!-- Sidebar collapse  -->
-        <div class="collapse navbar-collapse sidebar-collapse" id="sidebarMenu">
-          <button type="button" class="btn-close ms-auto me-2 mb-3" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-label="Fechar"></button> 
-          
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-
-            <div class="divFotoAluno">
-              <img id="fotoAluno" class="fotoAluno" src="" alt="Foto do Aluno"/>
-            </div>
-            <br> <br>
-            <p>Nome: <span id="nomeAluno"></span></p>
-
-            <li class="nav-item mt-3">
-              <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#primeiroAno" aria-expanded="false" aria-controls="collapseWidthExample">
-                Primeiro Ano
-              </button>
-            </li>
-
-            <li class="nav-item mt-3">
-              <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#segundoAno" aria-expanded="false" aria-controls="collapseWidthExample">
-                Segundo Ano
-              </button>
-            </li>
-
-            <li class="nav-item mt-3">
-              <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#terceiroAno" aria-expanded="false" aria-controls="collapseWidthExample">
-                Terceiro Ano
-              </button>
-            </li>
-
-            <li class="nav-item mt-3">
-              <button id="Deslogar" class="btn btn-primary mt-5" onclick="deslogar()">Deslogar</button>
-            </li>
-
-          </ul>
-        </div>
-      </div>
+        <div class="spacer"></div>
     </nav>
+
+    <!-- Sidebar fixa -->
+    <aside class="sidebar-fixed">
+      <ul class="navbar-nav">
+        <header>
+          <div class="divFotoAluno">
+          <img id="fotoAluno" class="fotoAluno" src="" alt="Foto do Aluno"/>
+        </div>
+        <p>Nome: <span id="nomeAluno"></span></p>
+        </header>
+        <hr class="white-bar">
+        <li class="nav-item mt-3">
+          <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#primeiroAno">
+            Primeiro Ano
+          </button>
+        </li>
+        <li class="nav-item mt-3">
+          <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#segundoAno">
+            Segundo Ano
+          </button>
+        </li>
+        <li class="nav-item mt-3">
+          <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#terceiroAno">
+            Terceiro Ano
+          </button>
+        </li>
+        <li class="nav-item mt-3">
+          <button id="Deslogar" class="btn btn-primary mt-5" onclick="deslogar()">Deslogar</button>
+        </li>
+      </ul>
+    </aside>
 
     <div class="container mt-5">
       <h1>Bem-vindo à Área do Aluno</h1>

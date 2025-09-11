@@ -1,28 +1,44 @@
-.gray{
-    color: gray;
+body{
+  margin-right: 280px; /* espaço para o aside fixo */
 }
 
 a{
-    color: white;
+  color: white;
+}
+
+p{
+  margin: 0;
+  padding: 0;
+}
+
+header{
+  
 }
 
 .btn-primary{
-    background-color: white;
-    border: none;
-    width: 100%;
-    height: 50px;
-    color: #b50303;
+  background-color: white;
+  border: none;
+  width: 100%;
+  height: 50px;
+  color: #b50303;
 }
 
+.gray{
+  color: gray;
+}
+
+
 .btn-primary:hover{
-    background-color: #b50303;
-    border: white 2px solid;
+  background-color: #b50303;
+  border: white 2px solid;
 }
 
 .navbar{
-    border-bottom: 9px solid #b50303;
-    background-color: #ffffff;
-    margin-bottom: 0;
+  border-bottom: 9px solid #b50303;
+  background-color: #ffffff;
+  margin-bottom: 0;
+  height: 20%;
+  width: 100%;
 }
 
 .navbar-brand img{
@@ -30,12 +46,12 @@ a{
 }
 
 .navbar, text, .navbar-brand{
-    color: #b50303;
+  color: #b50303;
 }
 
 .divFotoAluno {
-  height: 150px;
-  width: 150px;
+  height: 75px;
+  width: 75px;
   border: white 5px solid;
   border-radius: 50%;
   display: flex;
@@ -75,21 +91,22 @@ h2{
     height: 200px; 
 }
 
-.sidebar-collapse {
-  align-items: center; 
+.sidebar-fixed {
   position: fixed;
-  top: 0;
+  bottom: 0;
   right: 0;
   height: 100vh;
   width: 280px;
-  padding: 10px;
   background: #b50303;
   color: white;
-  padding-top: 60px;
   box-shadow: 2px 0 8px rgba(0,0,0,0.1);
-  transform: translateX(100%);
-  transition: transform 0.4s cubic-bezier(.4,0,.2,1);
   z-index: 1050;
+}
+
+.white-bar{
+  background-color: white;
+  height: 9px;
+  width: 100%;
 }
 
 .sidebar-collapse.show {
