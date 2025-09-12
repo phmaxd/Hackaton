@@ -1,5 +1,5 @@
 body{
-  margin-right: 280px; /* espaço para o aside fixo */
+  margin-right: 220px; /* espaço para o aside fixo */
 }
 
 a{
@@ -11,20 +11,25 @@ p{
   padding: 0;
 }
 
-header{
-  
+.headerSideBar{
+  height: 20%;
+  width: 100%;
+  border-bottom: 5px solid white;
 }
 
 .btn-primary{
   background-color: white;
   border: none;
-  width: 100%;
+  width: 90%;
   height: 50px;
   color: #b50303;
+  margin-left: 5%;
+  margin-right: 5%;
+  border: #b50303 2px solid;
 }
 
 .gray{
-  color: gray;
+  color: rgb(99, 99, 99);
 }
 
 
@@ -34,7 +39,7 @@ header{
 }
 
 .navbar{
-  border-bottom: 9px solid #b50303;
+  border-bottom: 5px solid #b50303;
   background-color: #ffffff;
   margin-bottom: 0;
   height: 20%;
@@ -42,7 +47,7 @@ header{
 }
 
 .navbar-brand img{
-  height: 100px;
+  height: 73px;
 }
 
 .navbar, text, .navbar-brand{
@@ -96,17 +101,15 @@ h2{
   bottom: 0;
   right: 0;
   height: 100vh;
-  width: 280px;
+  width: 220px;
   background: #b50303;
   color: white;
   box-shadow: 2px 0 8px rgba(0,0,0,0.1);
   z-index: 1050;
 }
 
-.white-bar{
-  background-color: white;
-  height: 9px;
-  width: 100%;
+.nameSideBar{
+  margin-left: 5%;
 }
 
 .sidebar-collapse.show {
