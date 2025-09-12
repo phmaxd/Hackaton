@@ -41,3 +41,18 @@ i.forEach(ii => {
             });
             }
         }
+
+        function trastejo(card) {
+            if(card === 'provaCard') {
+                document.getElementById("provaP").style.borderTop = "dashed #636363 0.5vh";
+            } else if(card === 'gabaritoCard') {
+                document.getElementById("gabaritoP").style.borderTop = "dashed #636363 0.5vh";
+            }
+        }
+        function  sairTrastejo(card) {
+            if(card === 'provaCard') {
+                document.getElementById("provaP").style.borderTop = "solid #636363 0.5vh";
+            } else if(card === 'gabaritoCard') {
+                document.getElementById("gabaritoP").style.borderTop = "solid #636363 0.5vh";
+            }
+        }
