@@ -49,7 +49,7 @@ p{
     top: 37%;
     left: 20%;
     background-color: white;
-    border: 10px solid #b00d0d;
+    border: 5px solid rgb(99, 99, 99);
     width: 96px;
     height: 96px;
     border-radius: 50%;
@@ -63,7 +63,7 @@ p{
     top: 37%;
     right: 20%;
     background-color: white;
-    border: 10px solid #b00d0d;
+    border: 5px solid rgb(99, 99, 99);
     width: 96px;
     height: 96px;
     border-radius: 50%;
