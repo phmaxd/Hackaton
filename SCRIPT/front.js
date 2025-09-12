@@ -2,6 +2,8 @@ const profButton = document.getElementById("profButton");
 const alunButton = document.getElementById("alunButton");
 const formContainer = document.getElementById("formContainer");
 
+
+
 alunButton.addEventListener("click", function(){
     this.style.color = "red";
     profButton.style.color = "black";
@@ -72,6 +74,5 @@ profButton.addEventListener("click", function(){
 
 
 })
-
 
 

@@ -23,7 +23,12 @@
         </span>
     </mainHeader>
     <mainMain>
-
+        <section id="mainMainContent">
+            <h2>Bem vindo(a) Professor(a)!</h2>
+            <p>Aqui você pode gerenciar suas turmas, elaborar provas e corrigir atividades.</p>
+            <p>Use o menu lateral para navegar pelas diferentes seções.</p>
+            <img src="../assets/images/Professor.png" alt="Imagem de um professor" id="imagemProfessor">
+        </section>
     </mainMain>
     </main>
     <drawer>
@@ -39,26 +44,74 @@
 
         </drawerHeader>
         <drawerMain>
-            <span id="selectSalasContainer">
-                <select name="" id="salasSelect">
-                    <option disabled selected hidden>SALAS</option>
-                    <option value="M-TEC MIN">M-TEC MIN</option>
-                    <option value="M-TEC MAD">M-TEC MAD</option>
-                    <option value="M-TEC MAM">M-TEC MAM</option>
-                    <option value="M-TEC DS">M-TEC DS</option>
-                    <option value="M-TEC MADN">M-TEC MADN</option>
-                </select>
-            </span>
-                <select name="" id="seriesSelect">
-                    <option disabled selected hidden>SERIES</option>
-                    <option value="M-TEC MIN">M-TEC MIN</option>
-                    <option value="M-TEC MAD">M-TEC MAD</option>
-                    <option value="M-TEC MAM">M-TEC MAM</option>
-                    <option value="M-TEC DS">M-TEC DS</option>
-                    <option value="M-TEC MADN">M-TEC MADN</option>
-                </select>
-            </span>
-            <button id="Deslogar" onclick="deslogar()">Deslogar</button>
+            <table>
+                <tr>
+                    <th id="tableTitle">SALAS</th>
+                </tr>
+                <tr>
+                    <th class="salasTh" style="color: #B00D0D;">M-TEC MIN</th>
+                </tr>
+                <tr>
+                    <th class="salasTh">M-TEC MAD</th>
+                </tr>
+                <tr>
+                    <th class="salasTh">M-TEC MAM</th>
+                </tr>
+                <tr>
+                    <th class="salasTh">M-TEC DS</th>
+                </tr>
+                <tr>
+                    <th class="salasTh">M-TEC MADN</th>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <th id="tableTitle">SÉRIES</th>
+                </tr>
+                <tr>
+                    <th class="seriesTh" style="color: #B00D0D;">PRIMEIRO</th>
+                </tr>
+                <tr>
+                    <th class="seriesTh">SEGUNDO</th>
+                </tr>
+                <tr>
+                    <th class="seriesTh">TERCEIRO</th>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <th class="semestresTh" style="color: #B00D0D;">1ºSEMESTRE</th>
+                </tr>
+                <tr>
+                    <th class="semestresTh">2ºSEMESTRE</th>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <th>ELABORAR PROVAS</th>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <th>CORREÇÕES</th>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <th style="color: #B00D0D;">PROVAS</th>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <th>MATÉRIA</th>
+                </tr>
+            </table>
+                        <table>
+                <tr>
+                    <th id="Deslogar" onclick="deslogar()">Deslogar</th>
+                </tr>
+            </table>
+            
         </drawerMain>
 
 
@@ -69,25 +122,6 @@
 
     </footer>
 
-    <script>
-        function deslogar() {
-            $.ajax({
-                url: "../PHP/logout.php",
-                type: "POST",
-                dataType: "json",
-                success: function(response) {
-                    if (response.status === "success") {
-                        window.location.href = "../HTML/index.html";
-                    } else {
-                        alert("Erro ao deslogar!");
-                    }
-                },
-                error: function(xhr, status, error) {
-                    console.error("Erro na requisição:", status, error);
-                    alert("Ocorreu um erro ao tentar deslogar. Tente novamente.");
-                }
-            });
-        }
-    </script>
+    <script src="../SCRIPT/areaProf.js"></script>
 </body>
 </html>
