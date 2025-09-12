@@ -7,6 +7,10 @@ body{
     display: flex;
 }
 
+a{
+    
+}
+
 main{
     width: 85%;
     height: 100vh;

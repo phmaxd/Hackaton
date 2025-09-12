@@ -56,3 +56,7 @@ i.forEach(ii => {
                 document.getElementById("gabaritoP").style.borderTop = "solid #636363 0.5vh";
             }
         }
+
+        function mudarTela(){
+            window.location = "ElaborarProvas.html"
+        }
