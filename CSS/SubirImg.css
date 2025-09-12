@@ -1,0 +1,161 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+  display: flex;
+}
+
+main{
+  width: 85%;
+  height: 100vh;
+  background-color: white;
+}
+
+input{
+  width: 100%;
+  height: 50px;
+  padding: 5px;
+  border: 2px solid #B00D0D;
+  border-radius: 15px;
+}
+
+input[type="file"] {
+  background-color: #f4f4f4;
+  border: 2px solid #B00D0D;
+  padding: 8px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="file"]:hover {
+  background-color: #e9e9e9;
+}
+
+input[type="file"]:focus {
+  outline: none;
+  border-color: #B00D0D;
+}
+
+input:focus{
+  border: 2px dashed #B00D0D;
+}
+
+Drawer{
+  width: 15%;
+  height: 100vh ;
+  background-color: #B00D0D;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+mainHeader{
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  border-bottom: #B00D0D solid 0.5vh;
+  height: 20%;
+  align-items: center;
+  position: relative;
+}
+
+#logoGPEI{
+  width: 35%;
+}
+
+#fotoProf{
+  width: 15vh; 
+  height: 15vh; 
+  object-fit:cover; 
+  border-radius:50%;
+  outline: 1vh solid #ffffff;
+  outline-offset: -1vh;
+}
+
+drawerHeader{
+  width: 100%;
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  gap: 0;
+  border-bottom: 0.5vh white solid;
+}
+
+#drawerHeaderContent{
+  margin-top: 4%
+}
+
+#nomeProf{
+  font-size: 2vh;
+  color: white;
+  font-weight: 800;
+}
+
+#titlePage{
+  position: absolute;
+  right:  5%;
+  color: #636363;
+  font-size: 130%;
+}
+
+drawerMain{
+  margin-top: 5%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2%;
+}
+
+option{
+  text-align: center;
+}
+
+table{
+  color: #636363;
+  background-color: white;
+  border-radius: 1vh;
+  width: 90%;
+  font-size: 2vh;
+  padding: 2% 0;
+}
+
+#tableTitle{
+  border-bottom: solid 0.2vh #636363;
+  cursor:default;
+  padding: 2% 0;
+  font-size: 2.5vh;
+}
+
+#tableTitle:hover{
+  color: #636363;
+}
+
+th:hover{
+  color: #B00D0D;
+}
+
+th{
+  cursor: pointer;
+  padding: 0.5%;
+}
+
+hr{
+  width: 100%;
+  background-color: #D9D9D9;
+  height: 0.00000005vh;
+}
+
+mainMainHeader{
+  align-self: center;
+  width: 80%;
+  height: 15%;
+  font-size: 3.5vh;
+  text-align: center;
+  align-content: center;
+  color: #636363;
+}

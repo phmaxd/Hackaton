@@ -23,12 +23,34 @@
         </span>
     </mainHeader>
     <mainMain>
+<<<<<<< HEAD
         <section id="mainMainContent">
             <h2>Bem vindo(a) Professor(a)!</h2>
             <p>Aqui você pode gerenciar suas turmas, elaborar provas e corrigir atividades.</p>
             <p>Use o menu lateral para navegar pelas diferentes seções.</p>
             <img src="../assets/images/Professor.png" alt="Imagem de um professor" id="imagemProfessor">
         </section>
+=======
+        <mainMainHeader>
+            <p>
+                Professor, insira a imagem da prova para que o sistema realize a divulgação da prova e libere o gabarito.
+            </p>
+        </mainMainHeader>
+        <mainMainMain>
+            <cardContainer>
+                <card onmouseenter="trastejo(this.id)" onmouseleave="sairTrastejo(this.id)" id="provaCard">
+                    <img src="../assets/images/search (3) 2.png" alt="Prova" />
+                    <p id="provaP">PROVA</p>
+                </card>
+            </cardContainer>
+            <cardContainer>
+                <card onmouseenter="trastejo(this.id)" onmouseleave="sairTrastejo(this.id)" id="gabaritoCard">
+                    <img src="../assets/images/achievement 3.png" alt="Gabarito" />
+                    <p id="gabaritoP">GABARITO</p>
+                </card>
+            </cardContainer>
+        </mainMainMain>
+>>>>>>> main
     </mainMain>
     </main>
     <drawer>
@@ -87,18 +109,30 @@
                 </tr>
             </table>
             <table>
+<<<<<<< HEAD
                 <tr>
+=======
+                <tr onclick="mudarTela()">
+>>>>>>> main
                     <th>ELABORAR PROVAS</th>
                 </tr>
             </table>
             <table>
+<<<<<<< HEAD
                 <tr>
+=======
+                <tr onclick="mudarTelaCorrecoes()">
+>>>>>>> main
                     <th>CORREÇÕES</th>
                 </tr>
             </table>
             <table>
                 <tr>
+<<<<<<< HEAD
                     <th style="color: #B00D0D;">PROVAS</th>
+=======
+                    <th style="color: #B00D0D;" onclick="mudarTelaAreaProf()">PROVAS</th>
+>>>>>>> main
                 </tr>
             </table>
             <table>

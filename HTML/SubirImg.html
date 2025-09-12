@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Área do Professor</title>
+    <script src="../SCRIPT/jquery.js"></script>
+    <link rel="stylesheet" href="../CSS/bootstrap_css/bootstrap.min.css">
+    <link rel="stylesheet" href="../CSS/SubirImg.css">
+    <link rel="shortcut icon" href="../assets/images/GPEIFavIcon.png" type="image/x-icon">  
+    <script src="../SCRIPT/VerificaProf.js"></script>
+</head>
+<body>
+    <main>
+        <mainHeader>
+            <span>
+                <img src="../assets/images/GPEI.png" id="logoGPEI">
+            </span>
+            <span id="titlePage">
+                <h1>
+                    Enviar Correções 
+                </h1>
+            </span>
+        </mainHeader>
+        <mainMain>
+            <mainMainHeader>
+                <p class="container">
+                    Professor, insira a imagem da prova para que o sistema realize a divulgação da prova e libere o gabarito.
+                </p>
+            </mainMainHeader>
+            <mainMainMain>
+                <form action="/PHP/enviaGabarito.php" method="POST" enctype="multipart/form-data">
+                    <div class="row mt-5">
+                        <div class="offset-1 col-4">
+                            <div class="card">
+                                <img class="card-img-top" src="../assets/images/upfile.png" >
+                                <hr>
+                                <div class="card-body">
+                                    <!-- Corrigido: Remover id="gabarito" e deixar apenas id="file-upload" -->
+                                    <input type="file" id="file-upload" name="gabarito" accept="image/*" onchange="previewImage()">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4 offset-1">
+                            <div class="card">
+                                <img id="image-preview" class="card-img-top" src="#" alt="Preview da Imagem" style="display:none; width: 200px; margin-top: 10px;">
+                                <hr>
+                                <div class="card-body">
+                                    <input type="text" name="rm" id="rm" placeholder="Insira o RM do aluno aqui">
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary mt-5 " name="submit">Enviar</button>
+                        </div> 
+                    </div>
+                </form>
+            </mainMainMain>
+        </mainMain>
+    </main>
+    <drawer>
+        <drawerHeader>
+            <sectio id="drawerHeaderContent">
+                <span> 
+                    <img id="fotoProf" src="../assets/images/userBola.png" alt="Foto do Professor"/>
+                </span>
+                <span>
+                    <p id="nomeProf"></p>
+                </span>
+            </section>
+
+        </drawerHeader>
+        <drawerMain>
+            <table>
+                <tr>
+                    <th id="tableTitle">SALAS</th>
+                </tr>
+                <tr>
+                    <th class="salasTh" style="color: #B00D0D;">M-TEC MIN</th>
+                </tr>
+                <tr>
+                    <th class="salasTh">M-TEC MAD</th>
+                </tr>
+                <tr>
+                    <th class="salasTh">M-TEC MAM</th>
+                </tr>
+                <tr>
+                    <th class="salasTh">M-TEC DS</th>
+                </tr>
+                <tr>
+                    <th class="salasTh">M-TEC MADN</th>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <th id="tableTitle">SÉRIES</th>
+                </tr>
+                <tr>
+                    <th class="seriesTh" style="color: #B00D0D;">PRIMEIRO</th>
+                </tr>
+                <tr>
+                    <th class="seriesTh">SEGUNDO</th>
+                </tr>
+                <tr>
+                    <th class="seriesTh">TERCEIRO</th>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <th class="semestresTh" style="color: #B00D0D;">1ºSEMESTRE</th>
+                </tr>
+                <tr>
+                    <th class="semestresTh">2ºSEMESTRE</th>
+                </tr>
+            </table>
+            <table>
+                <tr onclick="mudarTela()">
+                    <th>ELABORAR PROVAS</th>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <th onclick="mudarTelaCorrecoes()" style="color: #B00D0D;">CORREÇÕES</th>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <th onclick="mudarTelaAreaProf()" >PROVAS</th>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <th>MATÉRIA</th>
+                </tr>
+            </table>
+                        <table>
+                <tr>
+                    <th id="Deslogar" onclick="deslogar()">Deslogar</th>
+                </tr>
+            </table>
+            
+        </drawerMain>
+
+
+
+    </drawer>
+    <script src="../SCRIPT/areaProf.js"></script>
+    <script>
+        function previewImage() {
+            var file = document.getElementById('file-upload').files[0]; // Corrigido para id="file-upload"
+            var reader = new FileReader();
+            var preview = document.getElementById('image-preview');
+        
+            reader.onload = function (e) {
+                preview.src = e.target.result;
+                preview.style.display = 'block'; // Exibe a imagem
+            };
+        
+            if (file) {
+                reader.readAsDataURL(file); // Lê o arquivo como uma URL de dados
+            }
+        }
+    </script>
+</body>
+</html>
