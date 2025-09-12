@@ -2,6 +2,10 @@
 exec('python3 gpey.py');
 
 $jsonFile = 'data.json';
+
+header('Content-Type: application/json');
+
+
 if (file_exists($jsonFile)) {
     $jsonData = file_get_contents($jsonFile);
     $data = json_decode($jsonData, true);
@@ -15,5 +19,3 @@ if (file_exists($jsonFile)) {
 } else {
     echo json_encode(['error' => 'JSON file not found.']);
 }
-
-?>

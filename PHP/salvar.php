@@ -1,6 +1,5 @@
 <?php
-
-$conn = new mysqli('localhost', 'root', '', 'hackaton');
+include 'conecta.php';
 
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
