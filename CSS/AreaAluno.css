@@ -1,0 +1,152 @@
+body{
+  margin-right: 220px; /* espaço para o aside fixo */
+}
+
+a{
+  color: white;
+}
+
+p{
+  margin: 0;
+  padding: 0;
+}
+
+.headerSideBar{
+  height: 20%;
+  width: 100%;
+  border-bottom: 5px solid white;
+}
+
+.btn-primary{
+  background-color: white;
+  border: none;
+  width: 90%;
+  height: 50px;
+  color: #b50303;
+  margin-left: 5%;
+  margin-right: 5%;
+  border: #b50303 2px solid;
+}
+
+.gray{
+  color: rgb(99, 99, 99);
+}
+
+
+.btn-primary:hover{
+  background-color: #b50303;
+  border: white 2px solid;
+}
+
+.navbar{
+  border-bottom: 5px solid #b50303;
+  background-color: #ffffff;
+  margin-bottom: 0;
+  height: 20%;
+  width: 100%;
+}
+
+.navbar-brand img{
+  height: 73px;
+}
+
+.navbar, text, .navbar-brand{
+  color: #b50303;
+}
+
+.divFotoAluno {
+  height: 75px;
+  width: 75px;
+  border: white 5px solid;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Evita que a imagem transborde para fora do círculo */
+  margin: 0 auto
+}
+
+.fotoAluno {
+  object-fit: cover; 
+  width: 100%;
+  height: 100%;
+  border-radius: 50%; /* Garante que a imagem tenha borda arredondada */
+}
+
+h2{
+    color: rgb(0, 0, 0);
+}
+
+#primeiroSemestre, #segundoSemestre{
+    min-height: 200px;
+}
+
+.card{
+    /*width: 18rem;
+    height: 22rem;*/
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: #f6eaea;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card-img-top{
+    width: 200px;
+    height: 200px; 
+}
+
+.sidebar-fixed {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  height: 100vh;
+  width: 220px;
+  background: #b50303;
+  color: white;
+  box-shadow: 2px 0 8px rgba(0,0,0,0.1);
+  z-index: 1050;
+}
+
+.nameSideBar{
+  margin-left: 5%;
+}
+
+.sidebar-collapse.show {
+  transform: translateX(0);
+}
+
+.sidebar-collapse .btn-close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  z-index: 1100;
+}
+
+.sidebar-collapse .navbar-nav .nav-item {
+  opacity: 0;
+  transform: translateX(40px);
+  transition: opacity 0.4s, transform 0.4s;
+}
+.sidebar-collapse.show .navbar-nav .nav-item {
+  opacity: 1;
+  transform: translateX(0);
+}
+.sidebar-collapse.show .navbar-nav .nav-item:nth-child(1) { transition-delay: 0.1s; }
+.sidebar-collapse.show .navbar-nav .nav-item:nth-child(2) { transition-delay: 0.2s; }
+.sidebar-collapse.show .navbar-nav .nav-item:nth-child(3) { transition-delay: 0.3s; }
+.sidebar-collapse.show .navbar-nav .nav-item:nth-child(4) { transition-delay: 0.4s; }
+.sidebar-collapse.show .navbar-nav .nav-item:nth-child(5) { transition-delay: 0.5s; }
+
+.collapse.collapse-horizontal {
+  transition: width 0.4s cubic-bezier(.4,0,.2,1), opacity 0.4s cubic-bezier(.4,0,.2,1);
+  opacity: 0;
+  overflow: hidden;
+}
+.collapse.collapse-horizontal.show {
+  opacity: 1;
+}
+
+.sidebar-collapse.show {
+  transform: translateX(0);
+}

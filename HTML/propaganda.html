@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/bootstrap_css/bootstrap.min.css">
+    <link rel="stylesheet" href="../CSS/Propaganda.css">
+    <link rel="shortcut icon" href="../assets/images/GPEIFavIcon.png" type="image/x-icon"> 
+    <title>Entenda o que é o GPEI</title>
+</head>
+<body>
+    <header></header>
+
+    <!-- Carroussel :) -->
+    <button class="btn-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="rgb(224, 224, 224)" class="bi bi-chevron-left" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0"/>
+        </svg>
+    </button>
+    <div class="carrousel-holder">
+        <div id="carouselExample" class="carousel slide carousel-dark">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../assets/images/carrousel1.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="../assets/images/carrousel2.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="../assets/images/carrousel3.png" class="d-block w-100" alt="...">
+                </div>
+            </div>
+        </div>
+    </div>
+    <button class="btn-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="rgb(224, 224, 224)" class="bi bi-chevron-right" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
+        </svg>
+    </button>
+    
+    <div class="gpei-holder">
+        <img src="../assets/images/GPEI.png" alt="gpei logo"/>
+    </div>
+
+    <div class="line"></div>
+
+    <div class="p-holder">
+        <p id="carousel-text"></p>
+        <button class="btn-continuar">
+            <a href="../HTML/index.html">Continuar</a>
+        </button>
+    </div>
+
+    <footer></footer>
+    <script src="../SCRIPT/bootstrap_js/bootstrap.bundle.min.js"></script>
+    <script>
+        const textos = [
+            "Agilize a rotina de criação de provas com nosso sistema <br> prático e inteligente",
+            "Professores podem divulgar gabaritos de forma rápida, precisa e <br> automatizada, economizando tempo e reduzindo erros.",
+            "Mais eficiência para você, mais resultados para seus alunos!"
+        ];
+
+        const carousel = document.getElementById('carouselExample');
+        const texto = document.getElementById('carousel-text');
+
+        texto.innerHTML = `<strong>${textos[0]}</strong>`;
+
+        carousel.addEventListener('slide.bs.carousel', function (event) {
+            const index = event.to;
+            texto.innerHTML = `<strong>${textos[index]}</strong>`;
+        });
+    </script>
+</body>
+</html>

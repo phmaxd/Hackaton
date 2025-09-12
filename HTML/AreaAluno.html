@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Área do Aluno</title>
+    <link rel="stylesheet" href="../CSS/bootstrap_css/bootstrap.min.css">
+    <link rel="stylesheet" href="../CSS/AreaAluno.css">
+    <link rel="shortcut icon" href="../assets/images/GPEIFavIcon.png" type="image/x-icon"> 
+</head>
+<body>
+    <!-- Navbar :) --> 
+    <nav class="navbar">
+        <a class="navbar-brand" href="#">
+          <img src="../assets/images/brand.jpeg" alt="GPEI">
+        </a>
+        <div class="nav-item d-flex justify-content-center">
+          <h2 class="gray">Dashboard do Aluno</h2>
+        </div>
+        <div class="spacer"></div>
+    </nav>
+
+    <!-- Sidebar fixa -->
+    <aside class="sidebar-fixed">
+      <ul class="navbar-nav">
+        <header class="headerSideBar">
+          <div class="divFotoAluno">
+            <img id="fotoAluno" class="fotoAluno" src="" alt="Foto do Aluno"/>
+          </div>
+          <p class="nameSideBar">Nome: <span id="nomeAluno"></span></p>
+        </header>
+        <li class="nav-item mt-3">
+          <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#primeiroAno">
+            Primeiro Ano
+          </button>
+        </li>
+        <li class="nav-item mt-3">
+          <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#segundoAno">
+            Segundo Ano
+          </button>
+        </li>
+        <li class="nav-item mt-3">
+          <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#terceiroAno">
+            Terceiro Ano
+          </button>
+        </li>
+        <li class="nav-item mt-3">
+          <button id="Deslogar" class="btn btn-primary mt-5" onclick="deslogar()">Deslogar</button>
+        </li>
+      </ul>
+    </aside>
+
+    <div class="container mt-5">
+      <h1>Bem-vindo à Área do Aluno</h1>
+      <p>Aqui você pode acessar seus cursos, materiais e informações acadêmicas.</p>
+    </div>
+
+    <!-- Container que agrupa os anos -->
+    <div id="anosAccordion">
+
+      <!-- Primeiro Ano -->
+      <div class="collapse collapse-horizontal show" id="primeiroAno" data-bs-parent="#anosAccordion">
+        <div class="container mt-5">
+          <div class="row">
+            <h1>Primeiro ano</h1>
+            <div class="col-2">
+              <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#primeiroAnoPrimeiroSemestre">
+                Primeiro Semestre
+              </button>
+            </div>
+            <div class="col-2">
+              <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#primeiroAnoSegundoSemestre">
+                Segundo Semestre
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="container mb-5" id="primeiroAnoAccordion">
+          <div class="collapse collapse-horizontal show" id="primeiroAnoPrimeiroSemestre" data-bs-parent="#primeiroAnoAccordion">
+            <div class="container mt-5">
+              <div class="row">
+                <div class="col-md-4 col-sm-10 mt-3">
+                  <div class="card center-center">
+                    <div class="card-body">
+                      <img src="../assets/images/test.png" class="card-img-top mt-4" alt="test">
+                      <hr>
+                      <h2>Provas 1º semestre</h2>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-1"></div>
+                <div class="col-md-4 col-sm-10 mt-3">
+                  <div class="card justify-content-center">
+                    <div class="card-body">
+                      <img src="../assets/images/checked.png" class="card-img-top mt-4" alt="checked">
+                      <hr>
+                      <h2>Gabaritos 1º semestre</h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+          <div class="collapse collapse-horizontal" id="primeiroAnoSegundoSemestre" data-bs-parent="#primeiroAnoAccordion">
+            <div class="container mt-5">
+              <div class="row">
+                <div class="col-md-4 col-sm-10 mt-3">
+                  <div class="card center-center">
+                    <div class="card-body">
+                      <img src="../assets/images/test.png" class="card-img-top mt-4" alt="test">
+                      <hr>
+                      <h2>Provas 2º semestre</h2>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-1"></div>
+                <div class="col-md-4 col-sm-10 mt-3">
+                  <div class="card justify-content-center">
+                    <div class="card-body">
+                      <img src="../assets/images/checked.png" class="card-img-top mt-4" alt="checked">
+                      <hr>
+                      <h2>Gabaritos 2º semestre</h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Segundo Ano -->
+      <div class="collapse collapse-horizontal" id="segundoAno" data-bs-parent="#anosAccordion">
+        <div class="container mt-5">
+          <div class="row">
+            <h1>Segundo ano</h1>
+            <div class="col-2">
+              <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#segundoAnoPrimeiroSemestre">
+                Primeiro Semestre
+              </button>
+            </div>
+            <div class="col-2">
+              <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#segundoAnoSegundoSemestre">
+                Segundo Semestre
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="container mb-5" id="segundoAnoAccordion">
+          <div class="collapse collapse-horizontal" id="segundoAnoPrimeiroSemestre" data-bs-parent="#segundoAnoAccordion">
+            <div class="container mt-5">
+              <div class="row">
+                <div class="col-md-4 col-sm-10 mt-3">
+                  <div class="card center-center">
+                    <div class="card-body">
+                      <img src="../assets/images/test.png" class="card-img-top mt-4" alt="test">
+                      <hr>
+                      <h2>Provas 1º semestre</h2>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-1"></div>
+                <div class="col-md-4 col-sm-10 mt-3">
+                  <div class="card justify-content-center">
+                    <div class="card-body">
+                      <img src="../assets/images/checked.png" class="card-img-top mt-4" alt="checked">
+                      <hr>
+                      <h2>Gabaritos 1º semestre</h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="collapse collapse-horizontal" id="segundoAnoSegundoSemestre" data-bs-parent="#segundoAnoAccordion">
+            <div class="container mt-5">
+              <<div class="row">
+                <div class="col-md-4 col-sm-10 mt-3">
+                  <div class="card center-center">
+                    <div class="card-body">
+                      <img src="../assets/images/test.png" class="card-img-top mt-4" alt="test">
+                      <hr>
+                      <h2>Provas 2º semestre</h2>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-1"></div>
+                <div class="col-md-4 col-sm-10 mt-3">
+                  <div class="card justify-content-center">
+                    <div class="card-body">
+                      <img src="../assets/images/checked.png" class="card-img-top mt-4" alt="checked">
+                      <hr>
+                      <h2>Gabaritos 2º semestre</h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Terceiro Ano -->
+      <div class="collapse collapse-horizontal" id="terceiroAno" data-bs-parent="#anosAccordion">
+        <div class="container mt-5">
+          <div class="row">
+            <h1>Terceiro ano</h1>
+            <div class="col-2">
+              <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#terceiroAnoPrimeiroSemestre">
+                Primeiro Semestre
+              </button>
+            </div>
+            <div class="col-2">
+              <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#terceiroAnoSegundoSemestre">
+                Segundo Semestre
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="container mb-5" id="terceiroAnoAccordion">
+          <div class="collapse collapse-horizontal" id="terceiroAnoPrimeiroSemestre" data-bs-parent="#terceiroAnoAccordion">
+            <div class="container mt-5">
+              <div class="row">
+                <div class="col-md-4 col-sm-10 mt-3">
+                  <div class="card center-center">
+                    <div class="card-body">
+                      <img src="../assets/images/test.png" class="card-img-top mt-4" alt="test">
+                      <hr>
+                      <h2>Provas 1º semestre</h2>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-1"></div>
+                <div class="col-md-4 col-sm-10 mt-3">
+                  <div class="card justify-content-center">
+                    <div class="card-body">
+                      <img src="../assets/images/checked.png" class="card-img-top mt-4" alt="checked">
+                      <hr>
+                      <h2>Gabaritos 1º semestre</h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="collapse collapse-horizontal" id="terceiroAnoSegundoSemestre" data-bs-parent="#terceiroAnoAccordion">
+            <div class="container mt-5">
+              <div class="row">
+                <div class="col-md-4 col-sm-10 mt-3">
+                  <div class="card center-center">
+                    <div class="card-body">
+                      <img src="../assets/images/test.png" class="card-img-top mt-4" alt="test">
+                      <hr>
+                      <h2>Provas 2º semestre</h2>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-1"></div>
+                <div class="col-md-4 col-sm-10 mt-3">
+                  <div class="card justify-content-center">
+                    <div class="card-body">
+                      <img src="../assets/images/checked.png" class="card-img-top mt-4" alt="checked">
+                      <hr>
+                      <h2>Gabaritos 2º semestre</h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="../SCRIPT/bootstrap_js/bootstrap.bundle.min.js"></script>
+    <script src="../SCRIPT/jquery.js"></script> 
+    <script src="../SCRIPT/Verifica.js"></script>
+
+    <script>
+    function deslogar() {
+      $.ajax({
+        url: "../PHP/logout.php",
+        type: "POST",
+        dataType: "json",
+        success: function(response) {
+          if (response.status === "success") {
+            window.location.href = "../HTML/index.html";
+          } else {
+            alert("Erro ao deslogar!");
+          }
+        },
+        error: function(xhr, status, error) {
+          console.error("Erro na requisição:", status, error);
+          alert("Ocorreu um erro ao tentar deslogar. Tente novamente.");
+        }
+      });
+    }
+    </script>
+</body>
+</html>

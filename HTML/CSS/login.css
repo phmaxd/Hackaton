@@ -1,0 +1,134 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+main{
+display: flex;
+}
+#formularioProfAlunContainer{
+    width: 60%;
+    height: 100vh;
+    position: relative;
+   
+}
+#formContainer{
+    background-color: white;
+    border-radius: 20px; 
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    gap: 20px;
+    transform: translate(-50%, -50%);
+    padding: 5% 10% 5% 10%;
+    border: solid #B00D0D 2px;
+    transition: transform 1s ease;
+}
+#botoesProfAlunContainer{
+    width: 50%;
+    position: relative;
+
+}
+#botoesContainer{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 80%;
+    top: 50%;
+    left: 50%;
+    gap: 40px;
+    transform: translate(-50%, -50%);
+
+    
+}
+#imgUser{
+    width: 70%;
+    border-radius: 50%;
+}
+#imgUserContent{
+    text-align: center;
+}
+
+#senhaContent, #rmContent{
+    display: flex;
+    padding: 5%;
+    background-color: #F5F5F5;
+    border-radius: 8px;
+}
+#labelForm{
+    margin-bottom: -8%;
+    font-size: 2vh;
+}
+#formTitulo{
+    font-weight: bold;
+    text-align: center;
+}
+#rmInput, #senhaInput{
+    margin-left: 5%;
+    border: none;
+    color: black;
+    background-color: transparent;
+    width: 90%;
+        outline: none;
+
+}
+    input:-webkit-autofill {
+        box-shadow: 0 0 0 100px #F5F5F5 inset !important;
+
+    }
+#rmInput::placeholder, #senhaInput::placeholder{
+    color: #636363;
+    font-size: 80%;
+}
+i{
+    color: #636363;
+}
+#bolaVermelha{
+position: fixed;
+top: 50%;
+transform: translatey(-50%);
+right: -22%;
+z-index: -100;
+width: 200vh;
+height: 200vh;
+background-color: #B00D0D;
+border-radius: 50%;
+}
+#alunButton, #profButton{
+    border: none;
+    border-radius: 2vh;
+    padding: 5% 10%;
+    width: 100%;
+    font-size: 200%;
+    cursor: pointer;
+}
+#alunButton:hover, #profButton:hover{
+    background-color: rgb(192, 192, 192);
+}
+#entrarButton{
+    background-color: #B00D0D;
+    color:white;
+    border: none;
+    border-radius: 5px;
+    padding: 5% 10%;
+    cursor: pointer;
+    margin-top: 10%;
+}
+#entrarButton:hover{
+    background-color: #911414;
+}
+#entrarContent{
+    text-align: center;
+
+}
+#imgBottonContainer{
+    z-index: -100;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+#imgBotton{
+    width: 15%;
+}

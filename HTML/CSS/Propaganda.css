@@ -1,0 +1,110 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    background-color: #b00d0d;
+    width: 100%;
+    height: 5vh;
+}
+
+footer{
+    background-color: #b00d0d;
+    width: 100%;
+    height: 5vh;
+    bottom: 0;
+    position: fixed;
+}
+
+p{
+    font-size: 1.5vw;
+    color: rgb(99, 99, 99);
+}
+
+.btn-continuar a{
+    color: white;
+    text-decoration: none;
+}
+
+.btn-continuar:hover a{
+    color: #b00d0d;
+    text-decoration: none;
+}
+
+.carrousel-holder{
+    top: 7%;
+    width: 37vw;
+    height: auto;
+    border: 8px solid #b00d0d;
+    border-radius: 15px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.btn-prev{
+    color: #b00d0d;
+    position: absolute;
+    top: 37%;
+    left: 20%;
+    background-color: white;
+    border: 4px solid rgb(224, 224, 224);
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-next{
+    color: #b00d0d;
+    position: absolute;
+    top: 37%;
+    right: 20%;
+    background-color: white;
+    border: 4px solid rgb(224, 224, 224);
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.gpei-holder img{
+    width: 300px;
+    height: auto;
+    object-fit: cover;
+}
+
+.line{
+    position: absolute;
+    width: 100%;
+    height: 0.5vh;
+    background-color: #b00d0d;
+    top: 70%;
+}
+
+.p-holder{
+    width: 100%;
+    position: absolute;
+    justify-content: center;
+    text-align: center;
+    top: 75%;
+}
+
+.btn-continuar{
+    width: 7vw;
+    height: 5vh;
+    background-color: #b00d0d;
+    border: white 2px solid;
+    border-radius: 15px;
+    top: 87%;
+    font-size: 18px;
+    transition: 0.3s ease-in-out 0.1s;
+}
+
+.btn-continuar:hover{
+    background-color: white;
+    border: #b00d0d 2px solid;
+}
