@@ -6,19 +6,19 @@ body{
 header{
     background-color: #b00d0d;
     width: 100%;
-    height: 50px;
+    height: 5vh;
 }
 
 footer{
     background-color: #b00d0d;
     width: 100%;
-    height: 50px;
+    height: 5vh;
     bottom: 0;
     position: fixed;
 }
 
 p{
-    font-size: 2vw;
+    font-size: 1.5vw;
     color: rgb(99, 99, 99);
 }
 
@@ -33,8 +33,8 @@ p{
 }
 
 .carrousel-holder{
-    top: 5%;
-    width: 1400px;
+    top: 7%;
+    width: 37vw;
     height: auto;
     border: 8px solid #b00d0d;
     border-radius: 15px;
@@ -49,9 +49,9 @@ p{
     top: 37%;
     left: 20%;
     background-color: white;
-    border: 5px solid rgb(99, 99, 99);
-    width: 96px;
-    height: 96px;
+    border: 4px solid rgb(224, 224, 224);
+    width: 64px;
+    height: 64px;
     border-radius: 50%;
     justify-content: center;
     align-items: center;
@@ -63,9 +63,9 @@ p{
     top: 37%;
     right: 20%;
     background-color: white;
-    border: 5px solid rgb(99, 99, 99);
-    width: 96px;
-    height: 96px;
+    border: 4px solid rgb(224, 224, 224);
+    width: 64px;
+    height: 64px;
     border-radius: 50%;
     justify-content: center;
     align-items: center;
@@ -80,9 +80,9 @@ p{
 .line{
     position: absolute;
     width: 100%;
-    height: 10px;
+    height: 0.5vh;
     background-color: #b00d0d;
-    top: 67%;
+    top: 70%;
 }
 
 .p-holder{
@@ -99,8 +99,8 @@ p{
     background-color: #b00d0d;
     border: white 2px solid;
     border-radius: 15px;
-    top: 80%;
-    font-size: 33px;
+    top: 87%;
+    font-size: 18px;
     transition: 0.3s ease-in-out 0.1s;
 }
 
