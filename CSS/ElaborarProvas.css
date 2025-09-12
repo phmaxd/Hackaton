@@ -1,6 +1,6 @@
   body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     height: 100%;
   }
   .container {
@@ -95,7 +95,7 @@
   .profile-icon {
     width: 90px;
     height: 90px;
-    background-color: #ccc;
+    
     border-radius: 50%;
     margin-right: 55px;
     position: relative;
@@ -159,6 +159,8 @@
 a{
   color: #666666;
   border-bottom: 1px;
+  text-decoration: none ;
+ 
 }
 
 a:active{
@@ -206,4 +208,14 @@ p{
     background-color: white;
     border-radius: 6px;
     border-color: #666666;
+}
+#fotoProf{
+  width: 15vh; 
+  height: 15vh; 
+  object-fit:cover; 
+  border-radius:50%;
+  outline: 1vh solid #ffffff;
+  outline-offset: -1vh;
+  position: absolute;
+top: 0px;
 }

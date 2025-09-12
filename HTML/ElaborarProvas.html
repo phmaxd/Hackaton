@@ -4,6 +4,9 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link rel="stylesheet" href="../CSS/ElaborarProvas.css">
+<script src="../SCRIPT/jquery.js"></script>
+<link rel="shortcut icon" href="../assets/images/GPEIFavIcon.png" type="image/x-icon">  
+<script src="../SCRIPT/VerificaProf.js"></script>
 <title>Elaborar Questões</title>
 </head>
 <body>
@@ -177,9 +180,12 @@
 
   <aside class="sidebar">
     <div class="profile">
-      <div class="profile-icon"></div>
+      <div class="profile-icon">
+        <img id="fotoProf" src="../assets/images/userBola.png" alt="Foto do Professor"/>
+      </div>
     </div>
-    <p>Diógenes</p>
+    <br>
+    <p id="nomeProf"></p>
     <div class="menu2">
     <div class="menu">
     <div class="SALAS">SALAS</div>
@@ -236,7 +242,7 @@
     <hr class="espaco">
     <div class="menu">
         <ul class="opcoes">
-            <a href="#provas" class="BordaRedonda">
+            <a href="ElaborarProvas.html" class="BordaRedonda">
                 <li class="opcao">ELABORAR PROVAS</li>
             </a>
         </ul>
@@ -244,7 +250,7 @@
     <hr class="espaco">
     <div class="menu">
         <ul class="opcoes">
-            <a href="#provas" class="BordaRedonda">
+            <a href="/HTML/SubirImg.html" class="BordaRedonda">
                 <li class="opcao">CORREÇÕES</li>
             </a>
         </ul>
@@ -252,7 +258,7 @@
     <hr class="espaco">
     <div class="menu">
         <ul class="opcoes">
-            <a href="#provas" class="BordaRedonda">
+            <a href="../HTML/AreaProf.html" class="BordaRedonda">
                 <li class="opcao">PROVAS</li>
             </a>
         </ul>

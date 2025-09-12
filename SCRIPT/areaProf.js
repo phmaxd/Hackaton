@@ -60,3 +60,10 @@ i.forEach(ii => {
         function mudarTela(){
             window.location = "ElaborarProvas.html"
         }
+        function mudarTelaCorrecoes(){
+            window.location = "SubirImg.html"
+        }
+        function mudarTelaAreaProf(){
+            window.location = "AreaProf.html"
+        }
+        
