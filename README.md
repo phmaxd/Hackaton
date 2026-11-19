@@ -5,7 +5,7 @@
 <h3 align="left">Olá 👋! Este é o repositório Github do grupo 7, composto por: <br><br>
   <a href="https://github.com/phmaxd">@phmaxd</a><br>
   <a href="https://github.com/Joao-Okabe">@Joao-Okabe</a><br>
-  <a href="https://github.com/yTakeda07">@yTakeda07</a><br>
+  <a href="https://github.com/IsaacRogovski">@IsaacRogovski</a><br>
 </h3>
 
 ###
